@@ -1,0 +1,236 @@
+.company_image {
+	position: relative;
+	margin-right: calc(50% - 50vw);
+	padding-top: 64px;
+}
+section:not(#companyInfo) .page_title_wrap {
+	border: none;
+	padding-right: 0;
+	min-width: 450px;
+}
+.column_2 {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 60px;
+}
+.page_title_main {
+	text-align: right;
+}
+/* aboutUs */
+.aboutUs_content {
+	width: min(68%, 650px);
+}
+.aboutUs_table {
+	width: 100%;
+}
+.aboutUs_item {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 34px 0;
+	border-bottom: 1px solid var(--colorLightBlack);
+}
+.aboutUs_item:last-child {
+	border-bottom: none;
+}
+.aboutUs_label {
+	margin-right: 30px;
+	font-family: var(--fontNotosansjp);
+}
+.aboutUs_label span {
+	display: block;
+	text-align: center;
+	border-radius: 9999px;
+	background-color: var(--colorLightBlack);
+	color: var(--colorWhite);
+	width: 120px;
+	font-size: var(--fontSize16);
+	font-weight: 500;
+	line-height: 1.8;
+}
+.aboutUs_text,
+.aboutUs_text a {
+	font-family: var(--fontNotosansjp);
+	font-weight: 400;
+	color: var(--colorLightBlack);
+	font-size: var(--fontSize16);
+	line-height: 1.8;
+}
+.aboutUs_map {
+	margin-top: 60px;
+}
+
+/* history */
+#history {
+	background: #f2f2f2;
+	margin: 0;
+	max-width: 100%;
+}
+.history_inner {
+	margin: auto;
+	max-width: 1200px;
+	padding: 140px 0;
+}
+.history_content {
+	width: min(68%, 650px);
+}
+.history_table {
+	position: relative;
+	display: block;
+	padding-left: 29px;
+	border-left: 1px solid #333;
+}
+.history_table::before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 0;
+	left: -1px;
+	width: 2px;
+	height: 10px;
+	background-color: #f2f2f2;
+}
+.history_table::after {
+	content: "";
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: -1px;
+	width: 2px;
+	height: 1px;
+	background-color: #f2f2f2;
+}
+.history_item {
+	display: block;
+	position: relative;
+}
+.history_item::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: -40px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid #333333;
+	background-color: var(--colorWhite);
+}
+.history_item:first-child::before {
+	background-color: #333333;
+}
+.history_item:not(:last-child) {
+	padding-bottom: 30px;
+}
+.history_label {
+	font-family: var(--fontNotosansjp);
+	font-size: 14px;
+	font-weight: 400;
+	color: #808080;
+	line-height: 1.8;
+	min-width: 100px;
+}
+.history_text {
+	font-family: var(--fontNotosansjp);
+	font-size: var(--fontSize16);
+	font-weight: 400;
+	color: var(--colorLightBlack);
+	line-height: 1.8;
+}
+
+/* suppliers */
+.suppliers_inner {
+	padding: 140px 0 0 0;
+}
+.suppliers_content {
+	width: min(68%, 650px);
+}
+.suppliers_title {
+	background-color: var(--colorLightBlack);
+	color: var(--colorWhite);
+	width: 100%;
+	border-radius: 9999px;
+}
+.suppliers_title h3 {
+	font-family: var(--fontNotosansjp);
+	font-size: var(--fontSize16);
+	font-weight: 500;
+	line-height: 1.8;
+	text-align: center;
+}
+.suppliers_list_wrap {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 40px;
+	margin-top: 30px;
+}
+.suppliers_list {
+	display: flex;
+	flex-direction: column;
+}
+.suppliers_item {
+	font-family: var(--fontNotosansjp);
+	font-size: var(--fontSize16);
+	font-weight: 400;
+	color: var(--colorLightBlack);
+	line-height: 1.8;
+}
+
+@media screen and (max-width: 1024px) {
+	.column_2 {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 60px;
+	}
+	.page_title_wrap {
+		min-width: 100%;
+	}
+	.aboutUs_content,
+	.history_content,
+	.suppliers_content {
+		width: 100%;
+	}
+	.history_inner {
+		padding: 100px 0;
+	}
+	.suppliers_list_wrap {
+		justify-content: flex-start;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.column_2 {
+		gap: 40px;
+	}
+	.aboutUs_item {
+		flex-direction: column;
+		gap: 16px;
+		padding: 30px 0;
+	}
+	.aboutUs_label span,
+	.aboutUs_label {
+		width: 100%;
+	}
+	.aboutUs_map {
+		margin-top: 40px;
+	}
+	.history_inner {
+		padding: 60px 0 0 0;
+	}
+	.history_label {
+		display: flex;
+		align-items: flex-start;
+	}
+	.suppliers_inner {
+		padding: 60px 0 0 0;
+	}
+	.suppliers_list_wrap {
+		flex-direction: column;
+		gap: 0;
+	}
+}

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+
+:root {
+    --fontNotoserifjp: "Noto Serif JP", serif;
+}
+
+.food_service_contents_wrap{
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.food_service_left{
+    width: 52%;
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.food_service_left iframe{
+    width: 100%;
+}
+
+.food_service_right{
+    width: 40%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.food_service_right h3{
+    font-size:var(--fontSize30);
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+}
+.food_service_right p{
+    font-size:var(--fontSize16);
+    line-height: 1.8;
+}
+
+.food_servive_btn a{
+    background:#333333;
+    color:#fff;
+    padding:9px 58px 9px 28px;
+    position: relative;
+    border-radius: 6px;
+    font-family: var(--fontNotosansjp);
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+    transition: 0.3s;
+    border:1px solid #333;
+    font-weight: 500;
+}
+.food_servive_btn a:hover{
+    background: #fff;
+    color:#333;
+    border:1px solid #333;
+}
+.food_servive_btn a::before {
+    border-top: 1px solid #fff;
+    content: "";
+    right: 28px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    width: 18px;
+}
+.food_servive_btn a::after {
+    border-left: 1px solid #fff;
+    content: "";
+    height: 6px;
+    right: 29px;
+    position: absolute;
+    top: calc(50% - (6px * cos(50deg) / 2));
+    transform: translateY(-50%) rotate(-50deg);
+    transition: 0.3s;
+    width: 1px;
+}
+.food_servive_btn a:hover:before{
+    border-top: 1px solid #333;
+}
+.food_servive_btn a:hover:after{
+    border-left: 1px solid #333;
+}
+
+.food_bottom{
+    margin-top: 100px;
+}
+
+/* PC/SP表示切り分け */
+.pc {
+    display: block;
+}
+.sp {
+    display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .food_service_right h3{
+        font-size:3.2vw;
+    }
+    .food_servive_btn a{
+        font-size:1.55vw;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 983px) {
+    .pc {
+        display: none;
+    }
+    .sp {
+        display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    .food_service_contents_wrap{
+        margin-top: 60px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .food_service_left{
+        width: 100%;
+    }
+    .food_service_right{
+        width: 100%;
+        gap: 30px;
+    }
+    .food_service_right h3{
+        font-size:24px;
+    }
+    .food_service_right p{
+        font-size:16px;
+    }
+    .food_servive_btn a{
+        display: block;
+        width: 100%;
+        font-size:16px;
+    }
+    .food_bottom{
+        margin-top: 60px;
+    }
+    .food_servive_btn a::before{
+        right:18px;
+    }
+    .food_servive_btn a::after{
+        right:20px;
+    }
+    .first_section{
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+}

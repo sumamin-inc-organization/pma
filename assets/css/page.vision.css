@@ -1,0 +1,190 @@
+.vision_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--fontNotosansjp);
+    line-height: 1.8;
+}
+.vision_content_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.vision_content_text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.vision_content_title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.vision_content_title .title_main {
+    font-size: 46px;
+    font-family: var(--fontCormorant);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02rem;
+}
+.vision_content_title .title_sub {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--fontNotosansjp);
+    line-height: 1.8;
+}
+.mission_content_inner, .guideline_content_inner, .meanning_content_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.mission_content_text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.mission_content_list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.mission_content_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.mission_content_item .num {
+    font-size: 60px;
+    font-weight: 400;
+    font-family: var(--fontCormorant);
+    line-height: 1.1;
+    letter-spacing: 0.02rem;
+    color: #D8D8D8;
+    display: inline-block;
+}
+.guideline_content_list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.greeting_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.greeting_text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.greeting_sentence_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.greeting_author_wrap {
+    text-align: right;
+}
+
+@media screen and (min-width:768px) {
+    p {
+        font-size: 16px;
+    }
+    .vision_inner {
+        gap: 80px;
+    }
+    .vision_content {
+        margin-left: calc(50% - 50vw);
+    }
+    .vision_content_inner {
+        flex-direction: row;
+        align-items: center;
+        gap: 4vw;
+    }
+    .vision_content_title {
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 24px;
+    }
+    .vision_content_title .title_main {
+        font-size: 46px;
+    }
+    .mission_content_inner, .guideline_content_inner, .meanning_content_inner {
+        flex-direction: row;
+        gap: 4vw;
+    }
+    .mission_content_inner, .meanning_content_inner {
+        flex-direction: row-reverse;
+    }
+    .mission_content_text, .meanning_content_text {
+        padding-left: 2vw;
+    }
+    .guideline_content_text {
+        padding-right: 2vw;
+    }
+    .greeting_content {
+        flex-direction: row;
+        gap: 4vw;
+    }
+    .greeting_image {
+        width: 45%;
+    }
+    .greeting_text {    
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 1260px) {
+    p {
+        font-size: 20px;
+    }
+    .vision_inner {
+        gap: 100px;
+    }
+    .vision_content {
+        margin-left: calc(50% - 50vw);
+    }
+    .vision_content_inner {
+        flex-direction: row;
+        align-items: center;
+        gap: 6.61vw;
+    }
+    .vision_content_title {
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 30px;
+    }
+    .vision_content_title .title_main {
+        font-size: 60px;
+    }
+    .mission_content_inner, .guideline_content_inner, .meanning_content_inner {
+        flex-direction: row;
+        gap: 6.61vw;
+    }
+    .mission_content_inner, .meanning_content_inner {
+        flex-direction: row-reverse;
+    }
+    .mission_content_text, .meanning_content_text {
+        padding-left: 2.645vw;
+    }
+    .guideline_content_text {
+        padding-right: 2.645vw;
+    }
+    .greeting_content {
+        flex-direction: row;
+        gap: 6.61vw;
+    }
+    .greeting_image {
+        width: 45%;
+    }
+    .greeting_text {    
+        width: 55%;
+    }
+}
