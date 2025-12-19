@@ -18,7 +18,7 @@
                 </picture>
             </div>
             <div class="service_content">
-                <div class="service_inner">
+                <div class="service_inner service_inner1">
                     <div>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-contents/contents1.webp" alt="">
                     </div>
@@ -30,7 +30,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="service_inner">
+                <div class="service_inner service_inner2">
                     <div>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-contents/contents2.webp" alt="">
                     </div>
