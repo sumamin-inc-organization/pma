@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </div>
-            <div class="company_image editorial_image">
+            <div class="lower_kv editorial_image">
                 <picture>
                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service-editorial/editorial_main-sp.webp" media="(max-width: 767px)">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-editorial/editorial_main.webp" alt="P.M.Aトライアングル編集プロダクション事業イメージ">
@@ -173,7 +173,7 @@
         <section id="strongPoint">
             <div class="strongPoint_inner">
                 <h2 class="strongPoint_title">P.M.A.トライアングルにお任せください</h2>
-                <div class="service_content">
+                <div class="strongPoint_list">
                     <div class="strongPoint_item">
                         <div class="strongPoint_item_image">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-editorial/editorial01.webp" alt="企画立案から取材・撮影・デザインまで">

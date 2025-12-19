@@ -126,7 +126,7 @@ section p {
 	line-height: 2;
 }
 
-.company_image {
+.lower_kv {
     position: relative;
 	padding: 40px 0 0;
     margin-right: calc(50% - 50vw);
@@ -134,14 +134,14 @@ section p {
 
 @media screen and (max-width: 767px) {
 	.service_description{
-		padding: 40px 0;
+		padding: 60px 0 40px;
 	}
 
 	.service_description p{
 		line-height: 1.8;
 	}
 
-	.company_image {
+	.lower_kv {
 		padding: 0;
 	}
 }
