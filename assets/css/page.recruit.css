@@ -1,0 +1,225 @@
+/* ----recruit_description---- */
+.recruit_description_wrap {
+	padding-top: 60px;
+}
+.recruit_description {
+	font-size: 20px;
+	line-height: 2;
+}
+
+@media screen and (max-width: 767px) {
+	.recruit_description_wrap {
+		padding-top: 70px;
+	}
+}
+
+/* ----recruit_image---- */
+.recruit_image {
+	margin-right: calc(50% - 50vw);
+	padding-top: 100px;
+}
+
+/* ----recruit_content---- */
+.recruit_content {
+	padding-top: 140px;
+}
+
+@media screen and (min-width: 1024px) {
+	.recruit_content_inner {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 40px;
+	}
+	.recruit_aside {
+		width: 30%;
+	}
+	.recruit_main {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.recruit_content {
+		padding-top: 60px;
+	}
+}
+/* ----recruit_aside---- */
+.recruit_aside_list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.recruit_aside_item a {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.recruit_aside_item a svg {
+	transition: transform 0.3s;
+}
+.recruit_aside_item a:hover svg {
+	transform: translateX(6px);
+}
+.recruit_aside_item_title {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	gap: 0px;
+}
+.recruit_aside_item_title .title_main {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 2;
+	color: var(--colorLightBlack);
+	word-break: keep-all;
+}
+.recruit_aside_item_title .title_sub {
+	font-size: 14px;
+	line-height: 2;
+	color: #808080;
+	font-weight: 400;
+	word-break: keep-all;
+}
+
+.recruit_aside_item svg {
+	min-width: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.recruit_aside_list {
+		position: sticky;
+		top: 130px;
+	}
+}
+
+@media screen and (max-width: 1261px) {
+	.recruit_aside_list {
+		min-width: 342px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.recruit_aside_item_title_en {
+		font-size: min(5.641vw, 24px);
+	}
+	.recruit_aside_item_title_ja {
+		font-size: min(3.077vw, 14px);
+	}
+}
+
+/* ----recruit_main---- */
+.recruit_main_inner {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+.recruit_main_item {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.recruit_main_title {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	gap: 20px;
+}
+.recruit_main_title .title_main {
+	font-size: 40px;
+	font-weight: 600;
+	font-family: var(--fontCormorant);
+	line-height: 1.5;
+}
+.recruit_main_title .title_sub {
+	font-size: 14px;
+	font-weight: 400;
+	font-family: var(--fontNotosansjp);
+	line-height: 2;
+	color: #808080;
+}
+.recruit_main_title_note {
+	font-size: 14px;
+	font-family: var(--fontNotosansjp);
+	line-height: 2;
+	color: #808080;
+	padding-top: 4px;
+}
+.recruit_main_desc {
+	padding-left: 1.984vw;
+}
+.recruit_main_desc_title {
+	font-size: 20px;
+	font-weight: 500;
+	font-family: var(--fontNotosansjp);
+	line-height: 1.8;
+}
+.recruit_main_desc_text {
+	font-size: 16px;
+	line-height: 1.8;
+	padding-top: 10px;
+}
+.recruit_main_list_item {
+	padding: 34px 0;
+	display: flex;
+	flex-direction: row;
+	gap: 1.984vw;
+	border-top: 1px solid #333333;
+}
+.recruit_main_item_name {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.8;
+	width: 120px;
+	min-width: 120px;
+	color: #fff;
+	background: #333333;
+	border-radius: 9999px;
+	display: grid;
+	place-content: center;
+	height: fit-content;
+	font-family: var(--fontNotosansjp);
+}
+.recruit_main_item_text {
+	font-size: 16px;
+	line-height: 1.8;
+}
+.recruit_main_item_list {
+	font-size: 16px;
+	line-height: 1.8;
+	font-weight: 400;
+	list-style: disc;
+	padding-left: 20px;
+	color: var(--colorLightBlack);
+	font-family: var(--fontNotosansjp);
+}
+
+@media screen and (max-width: 1024px) {
+	.recruit_main {
+		margin-top: 60px;
+	}
+	.recruit_description {
+		font-size: 16px;
+	}
+	.recruit_image {
+		padding-top: 40px;
+	}
+	.recruit_main_title {
+		flex-direction: column;
+		gap: 0;
+	}
+	.recruit_main_title .title_main {
+		font-size: 28px;
+	}
+	.recruit_main_item {
+		gap: 40px;
+	}
+	.recruit_main_list_item {
+		flex-direction: column;
+		gap: 30px;
+	}
+	.recruit_main_item_name {
+		width: 100%;
+	}
+}

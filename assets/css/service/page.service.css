@@ -1,0 +1,423 @@
+.service_list_inner {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	margin-right: calc(50% - 50vw);
+	margin-top: 40px;
+}
+.service_list_item {
+	height: 20.5vw;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.service_list_item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: cover;
+	background-position: center;
+	transition: 0.6s;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+.service_list_item a {
+	position: relative;
+	z-index: 1;
+	display: grid;
+	place-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.service_list_item:hover::before {
+	scale: 1.1;
+	transition: 0.6s;
+	z-index: 0;
+}
+.service_list_item_title {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.service_list_item_title_en {
+	font-size: 5.291vw;
+	font-weight: 600;
+	line-height: 1;
+}
+.service_list_item_title_en--small {
+	font-size: 3.968vw;
+}
+.service_list_item_title_ja {
+	font-family: var(--fontNotosansjp);
+	font-size: 1.455vw;
+	font-weight: 700;
+	line-height: 3;
+}
+
+.list1 {
+	grid-area: 1 / 1 / 2 / 3;
+}
+.list1::before {
+	background-image: url(../../img/service/editional.webp);
+}
+.list2 {
+	grid-area: 2 / 1 / 3 / 2;
+}
+.list2::before {
+	background-image: url(../../img/service/media.webp);
+}
+.list3 {
+	grid-area: 2 / 2 / 3 / 3;
+}
+.list3::before {
+	background-image: url(../../img/service/content.webp);
+}
+.list4 {
+	grid-area: 3 / 1 / 4 / 2;
+}
+.list4::before {
+	background-image: url(../../img/service/event.webp);
+}
+.list5 {
+	grid-area: 3 / 2 / 4 / 3;
+}
+.list5::before {
+	background-image: url(../../img/service/consulting.webp);
+}
+.list6 {
+	grid-area: 4 / 1 / 5 / 2;
+}
+.list6::before {
+	background-image: url(../../img/service/aparel.webp);
+}
+.list7 {
+	grid-area: 4 / 2 / 5 / 3;
+}
+.list7::before {
+	background-image: url(../../img/service/ec.webp);
+}
+.list8 {
+	grid-area: 5 / 1 / 6 / 2;
+}
+.list8::before {
+	background-image: url(../../img/service/SDGs.webp);
+}
+.list9 {
+	grid-area: 5 / 2 / 6 / 3;
+}
+.list9::before {
+	background-image: url(../../img/service/food.webp);
+}
+
+@media screen and (max-width: 767px) {
+	.service_list_inner {
+		margin: 0 calc(50% - 50vw); /* 画面幅いっぱいにはみ出させるためのネガティブマージン */
+		width: 100vw;
+		margin-right: unset;
+		margin-top: 20px;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.service_list_item {
+		min-height: 180px;
+	}
+	.list1,
+	.list2,
+	.list3,
+	.list4,
+	.list5,
+	.list6,
+	.list7,
+	.list8,
+	.list9 {
+		grid-area: unset;
+	}
+	.service_list_item_title_en {
+		font-size: 40px;
+	}
+	.service_list_item_title_en--small {
+		font-size: 34px;
+	}
+	.service_list_item_title_ja {
+		font-size: 16px;
+		line-height: 2;
+	}
+}
+
+/* works */
+.works_posts {
+	margin-top: 60px;
+}
+.works_post_content {
+	color: var(--colorLightBlack);
+}
+
+.works_post_thumb img {
+	width: 100%;
+}
+.works_post_date {
+	font-family: var(--fontRoboto);
+	font-size: 12px;
+}
+.works_post_title {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.5;
+	display: -webkit-box;
+	-webkit-box-orient: vertical; /* 垂直方向に配置 */
+	overflow: hidden; /* 溢れた部分を隠す */
+	text-overflow: ellipsis; /* 溢れた部分に「...」を表示 */
+	-webkit-line-clamp: 2; /* 最大行数を2行に設定 */
+}
+
+@media screen and (min-width: 768px) {
+	.works_posts_list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 3.968vw 2.645vw;
+	}
+	.works_post_item {
+		display: grid;
+	}
+	.works_post_item a {
+		display: grid;
+		grid-template-rows: subgrid;
+		grid-row: span 2;
+		gap: 10px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.works_posts {
+		margin-top: 40px;
+	}
+	.worksSwiper {
+		margin-right: calc(50% - 50vw);
+	}
+	.worksSwiper .swiper-wrapper {
+		height: fit-content;
+	}
+	.works_post_content {
+		padding-top: 10px;
+	}
+	.works_post_date {
+		font-size: 14px;
+	}
+	.works_post_title {
+		font-size: 22px;
+	}
+}
+
+/* hawaiiInfo */
+.hawaiiInfo_inner {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.sec__top {
+	align-items: flex-end;
+	display: flex;
+	justify-content: space-between;
+}
+.sec__post {
+	background: linear-gradient(
+		to bottom,
+		#fff 0%,
+		#fff 20%,
+		var(--colorGray) 20%,
+		var(--colorGray) 100%
+	);
+	margin-right: calc(50% - 50vw);
+	margin-top: 60px;
+	padding-bottom: 80px;
+	padding-left: 100px;
+	width: 100vw;
+}
+.sec__post--imgBox img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.sec__title {
+	font-size: var(--fontSize100);
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	line-height: 1.2;
+	position: relative;
+}
+
+.sec__title--border {
+	background-color: var(--colorLightBlack);
+	height: 1px;
+	margin-right: calc(50% - 50vw);
+	position: relative;
+	width: 100vw;
+}
+
+.sec__title--border span {
+	background: var(--colorWhite);
+	height: 10px;
+	left: 0;
+	position: absolute;
+	top: -5px;
+	transform-origin: right;
+	transition: 2.5s;
+	width: 100%;
+}
+
+.sec__title--border span.active {
+	transform: scaleX(0);
+}
+
+.slideBtn {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr;
+}
+
+.hawaiiInfo .sec__title {
+	font-size: 6.67vw;
+	font-weight: 500;
+	line-height: 0.93;
+}
+
+.hawaii__title--logo {
+	position: relative;
+}
+
+.hawaii__title--logo::after {
+	background-image: url(../../img/top/hawaii/img-hawaii_logo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	bottom: 9px;
+	content: "";
+	height: 4.8vw;
+	position: absolute;
+	right: -95%;
+	width: 20.5vw;
+}
+
+.hawaiiInfo__date {
+	color: var(--colorLightBlack);
+	font-family: var(--fontRoboto);
+	font-size: var(--fontSize16);
+	font-weight: 400;
+	line-height: 1.88;
+	margin-top: 30px;
+}
+
+.hawaiiInfo .sec__post--text {
+	font-family: var(--fontNotosansjp);
+	margin-top: 20px;
+}
+
+.sec__post--item .sec__post--text:hover {
+	opacity: 0.6;
+	transition: 0.4s;
+}
+
+.feedzy-rss-1 ul {
+	display: flex;
+	flex-direction: row;
+	height: fit-content;
+}
+.rss_item {
+	height: fit-content;
+}
+.rss_item .title {
+	font-family: var(--fontNotosansjp);
+	margin-top: 20px;
+
+	font-family: var(--fontNotosansjp);
+	font-size: var(--fontSize22);
+	font-weight: bold;
+	line-height: 1.64;
+	margin-top: 30px;
+	display: block;
+}
+
+.rss_item .title a {
+	color: var(--colorLightBlack);
+}
+
+.rss_item .rss_content {
+	display: table;
+}
+
+.rss_item .rss_content small {
+	display: block;
+	color: var(--colorLightBlack);
+	font-family: var(--fontRoboto);
+	font-size: var(--fontSize16);
+	font-weight: 400;
+	line-height: 1.88;
+	margin-top: 30px;
+}
+
+@media screen and (min-width: 1500px) {
+	.hawaiiInfo .sec__title {
+		font-size: 100px;
+	}
+
+	.hawaii__title--logo::after {
+		height: 72px;
+		right: -340px;
+		width: 307px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.hawaiiInfo {
+		overflow: hidden;
+	}
+
+	.hawaiiInfo .sec__title {
+		font-size: 46px;
+	}
+
+	.sec__post {
+		background: linear-gradient(
+			to bottom,
+			#fff 0%,
+			#fff 20%,
+			var(--colorGray) 20%,
+			var(--colorGray) 100%
+		);
+		margin: 0 calc(50% - 50vw) 0;
+		margin-top: 40px;
+		padding-bottom: 65px;
+		padding-left: 40px;
+	}
+
+	.hawaii__title--logo::after {
+		bottom: 4px;
+		height: 36px;
+		right: -110px;
+		width: 100px;
+	}
+
+	.hawaiiInfo__date {
+		font-size: 16px;
+		margin-top: 20px;
+	}
+
+	.feedzy-rss-1 {
+		margin: 0 calc(50% - 50vw) 0;
+	}
+
+	.rss_item .title {
+		font-size: 20px;
+	}
+
+	.rss_item .rss_content small {
+		font-size: 16px;
+		margin-top: 20px;
+	}
+}
