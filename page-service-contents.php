@@ -13,33 +13,33 @@
             </div>
             <div class="lower_kv">
                 <picture>
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service-media/kv-sp.webp" media="(max-width: 767px)">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-media/kv.webp" alt="コンテンツ制作事業">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service-contents/kv-sp.webp" media="(max-width: 767px)">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-contents/kv.webp" alt="コンテンツ制作事業">
                 </picture>
             </div>
             <div class="service_content">
                 <div class="service_inner">
                     <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-editorial/editorial01.webp" alt="企画立案から取材・撮影・デザインまで">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-contents/contents1.webp" alt="">
                     </div>
                     <div>
-                        <div class="strongPoint_item_head">
-                            <h4>企画立案から取材・撮影・デザインまで</h4>
-                            <h3>紙媒体を制作して<br>30年の歴史があります</h3>
-                        </div>
-                        <p>国内・海外の観光情報誌、雑誌やムック、テレビなどの番組本、ファッションカタログ、企業PR誌や各政府観光局のパンフレットなど、年間100冊以上の制作に携わっています。 企画立案から取材、撮影、原稿執筆、校正、デザイン、印刷までの一連の作業を、まとめてお任せいただけます。 社内外に経験豊富な編集者、ライター、フォトグラファーを多数抱えており、クオリティの高い成果物で多くのクライアント様にご満足いただいています。</p>
+                        <h3>ストック情報の<br>他メディア展開</h3>
+                        <p>
+                            国内外の最新スポットやトレンド、「ハワイ」「東京」「カフェ」「ラーメン」「スイーツ」「温泉」などの人気キーワードの情報が社内に収集されています。<br>
+                            そうした情報を紙メディア、デジタルコンテンツの特集記事や地図情報アプリなどスマホ用コンテンツとして提供させていただくことができます。
+                        </p>
                     </div>
                 </div>
                 <div class="service_inner">
                     <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-editorial/editorial01.webp" alt="企画立案から取材・撮影・デザインまで">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-contents/contents2.webp" alt="">
                     </div>
                     <div>
-                        <div class="strongPoint_item_head">
-                            <h4>企画立案から取材・撮影・デザインまで</h4>
-                            <h3>紙媒体を制作して<br>30年の歴史があります</h3>
-                        </div>
-                        <p>国内・海外の観光情報誌、雑誌やムック、テレビなどの番組本、ファッションカタログ、企業PR誌や各政府観光局のパンフレットなど、年間100冊以上の制作に携わっています。 企画立案から取材、撮影、原稿執筆、校正、デザイン、印刷までの一連の作業を、まとめてお任せいただけます。 社内外に経験豊富な編集者、ライター、フォトグラファーを多数抱えており、クオリティの高い成果物で多くのクライアント様にご満足いただいています。</p>
+                        <h3>最大限に価値を伝える<br>映像コンテンツ</h3>
+                        <p>
+                            ご要望やご予算に合わせて、企画からキャスティング等すべて対応いたします。企画・シナリオ～撮影、編集作業すべてお任せください。<br>
+                            クオリティ重視のブランディング動画や、サービス紹介動画など実写・アニメーション形式問わず制作が可能です。まずはご相談ください。
+                        </p>
                     </div>
                 </div>
             </div>
