@@ -29,9 +29,9 @@
                             ハワイを応援するオンラインセレクトショップ「LaniLani market」やハワイのセレクトアパレルショップ「Lilly＆Emma」、バニラビーンズスイーツの専門店「東京バニラファクトリー」の通販サイトなど、さまざまなECサイトを企画・運営しています。
                         </p>
                         <div class="service_link">
-                            <a class="service_btn" href="">LaniLani market</a>
-                            <a class="service_btn" href="">Lilly＆Emma</a>
-                            <a class="service_btn" href="">東京バニラファクトリー</a>
+                            <a class="service_btn" href="https://lanilanimarket.com/" target="_blank">LaniLani market</a>
+                            <a class="service_btn" href="https://lilly-and-emma.com/" target="_blank">Lilly＆Emma</a>
+                            <a class="service_btn" href="https://www.tokyovanilla-factory.com/" target="_blank">東京バニラファクトリー</a>
                         </div>
                     </div>
                 </div>

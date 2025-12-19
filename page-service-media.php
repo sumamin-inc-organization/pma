@@ -18,7 +18,7 @@
                 </picture>
             </div>
             <div class="service_content">
-                <div class="service_flex flex_540">
+                <div class="service_inner service_inner1">
                     <div>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-editorial/editorial01.webp" alt="企画立案から取材・撮影・デザインまで">
                     </div>

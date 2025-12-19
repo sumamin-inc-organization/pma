@@ -256,6 +256,7 @@ section p {
     border:1px solid #333;
     font-weight: 500;
 	width: 360px;
+	text-align: center;
 }
 .service_btn:hover{
     background: #fff;

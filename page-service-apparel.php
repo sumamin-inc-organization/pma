@@ -29,11 +29,11 @@
                             オシャレでエレガントな姉、リリーと、元気でキュートな妹、エマ。この「二人の姉妹のクローゼット」をコンセプトにしたセレクトショップをハワイ・ホノルルに展開しています。 同ブランドの「FEEL ALOHA」ロゴが入ったＴシャツは、SNSをきっかけに大ヒット。着ている姿を自撮りしてinstagramにアップするのがハワイでの流行となりました。<br><br>
                             そのほかにも、防水性・防汚性に優れた世界特許の特殊素材で作ったアイテムが話題を呼び、オリジナルのコラボグッズを数々の企業のノベルティとしてご活用いただいております。
                         </p>
-                        <a class="service_btn" href="">Lilly & Emma 公式サイト</a>
+                        <a class="service_btn" href="https://lilly-and-emma.com/" target="_blank">Lilly & Emma 公式サイト</a>
 
                     </div>
                 </div>
-                <div class="service_inner">
+                <div class="service_inner service_inner1">
                     <div>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-apparel/apparel3.webp" alt="">
                     </div>
@@ -44,7 +44,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="service_inner">
+                <div class="service_inner service_inner2
+                ">
                     <div>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-apparel/apparel4.webp" alt="">
                     </div>
@@ -53,7 +54,7 @@
                             ハワイの美しい自然や地球環境、関連企業およびスタッフ、労働環境などステークホルダーに対してサステナビリティな視点から配慮し、過剰な生産はいたしません。<br>
                             OEM展開やコラボレーションなども可能です。
                         </p>
-                        <a class="service_btn" href="">快適多機能性素材について</a>
+                        <a class="service_btn" href="<?php echo esc_url(home_url('/apparel-lp/')); ?>">快適多機能性素材について</a>
                     </div>
                 </div>
             </div>
