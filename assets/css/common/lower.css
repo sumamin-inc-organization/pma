@@ -100,7 +100,7 @@ section p {
 	vertical-align: bottom;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
 	.page_title_wrap {
 		position: relative;
 	}
@@ -243,6 +243,53 @@ section p {
 	transition: 0.3s;
 }
 
+.service_btn{
+    background:#333333;
+    color:#fff;
+    padding:9px 58px 9px 28px;
+    position: relative;
+    border-radius: 6px;
+    font-family: var(--fontNotosansjp);
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+    transition: 0.3s;
+    border:1px solid #333;
+    font-weight: 500;
+	width: 360px;
+}
+.service_btn:hover{
+    background: #fff;
+    color:#333;
+    border:1px solid #333;
+}
+.service_btn::before {
+    border-top: 1px solid #fff;
+    content: "";
+    right: 28px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    width: 18px;
+}
+.service_btn::after {
+    border-left: 1px solid #fff;
+    content: "";
+    height: 6px;
+    right: 29px;
+    position: absolute;
+    top: calc(50% - (6px * cos(50deg) / 2));
+    transform: translateY(-50%) rotate(-50deg);
+    transition: 0.3s;
+    width: 1px;
+}
+.service_btn:hover:before{
+    border-top: 1px solid #333;
+}
+.service_btn:hover:after{
+    border-left: 1px solid #333;
+}
+
 @media screen and (max-width: 767px) {
 	.view__more {
 		gap: 12px;
@@ -277,6 +324,10 @@ section p {
 		height: 8px;
 		left: 25px;
 		top: 40%;
+	}
+
+	.service_btn{
+		width: 100%;
 	}
 }
 
