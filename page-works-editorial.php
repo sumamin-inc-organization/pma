@@ -5,7 +5,7 @@
             <div class="page_title_wrap">
                 <div class="page_title">
                     <h1 class="page_title_main"><span class="page_title_main--small">WORKS</span><br>EDITORIAL</h1>
-                    <p class="page_title_sub">編集プロダクション事業実績a</p>
+                    <p class="page_title_sub">編集プロダクション事業実績</p>
                 </div>
             </div>
             <div class="deco__bg">
