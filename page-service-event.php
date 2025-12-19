@@ -4,12 +4,12 @@
         <section id="serive" class="first_section">
             <div class="page_title_wrap">
                 <div class="page_title">
-                    <h2 class="page_title_main">CONTENT</h2>
-                    <p class="page_title_sub">コンテンツ制作事業</p>
+                    <h2 class="page_title_main">EVENT</h2>
+                    <p class="page_title_sub">PR･イベント事業</p>
                 </div>
             </div>
             <div class="service_description">
-                <p>自社にストックされているスポットやトレンド情報などを、コンテンツとしてさまざまなメディアへ展開。</p>
+                <p>独自のリソースとネットワークを活用したプロモーション、イベントプロデュースをお手伝いいたします。​</p>
             </div>
             <div class="lower_kv">
                 <picture>
@@ -18,7 +18,7 @@
                 </picture>
             </div>
             <div class="service_content">
-                <div class="service_inner">
+                <div class="service_inner service_inner1">
                     <div>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-event/event1.webp" alt="">
                     </div>
@@ -29,7 +29,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="service_inner">
+                <div class="service_inner service_inner2">
                     <div>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-event/event2.webp" alt="">
                     </div>
@@ -39,12 +39,12 @@
                             集客の足掛かりとして、またイベントを盛り上げるアイテムとして、ハワイ発人気ブランド「Lilly & Emma」を活用したオリジナル商品やノベルティ、また撥水性・防汚性に優れた革新的なファブリック素材を活用した商品など、オリジナリティの高い商品開発の企画提案が可能です。
                         </p>
                         <div class="service_link">
-                            <a class="service_btn" href="">ハワイブランド「Lilly & Emma」</a>
-                            <a class="service_btn" href="">機能性ファブリックについ</a>
+                            <a class="service_btn" href="<?php echo esc_url(home_url('/apparel-lp/')); ?>">ハワイブランド「Lilly & Emma」</a>
+                            <a class="service_btn" href="">機能性ファブリックについて</a>
                         </div>
                     </div>
                 </div>
-                <div class="service_inner">
+                <div class="service_inner service_inner3">
                     <div>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-event/event3.webp" alt="">
                     </div>
