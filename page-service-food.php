@@ -11,7 +11,7 @@
             <div class="service_description">
                 <p>日本初のバニラスイーツ専門店『東京バニラファクトリー』を運営。</p>
             </div>
-            <div class="company_image">
+            <div class="lower_kv">
                 <picture>
                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service-food/kv-sp.webp" media="(max-width: 767px)">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-food/kv.webp" alt="飲食事業">

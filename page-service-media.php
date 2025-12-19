@@ -11,26 +11,23 @@
             <div class="service_description">
                 <p>ハワイをはじめとする観光地の観光情報メディアや、富裕層に特化したライフスタイルメディアの運営を行っています。</p>
             </div>
-            <div class="company_image">
+            <div class="lower_kv">
                 <picture>
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/media/kv-sp.webp" media="(max-width: 767px)">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/media/kv.webp" alt="メディア事業">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service-media/kv-sp.webp" media="(max-width: 767px)">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-media/kv.webp" alt="メディア事業">
                 </picture>
             </div>
-            <div class="food_service">
-                <div class="food_service_contents_wrap">
-                    <div class="food_service_left">
-                        <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/img/food/tvf.webp" alt="会社概要"></figure>
-                        <div class="food_servive_movie">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xAQBr4dI9jo?si=c7Qt8L5qyZiP_wEZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
+            <div class="service_content">
+                <div class="service_flex flex_540">
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-editorial/editorial01.webp" alt="企画立案から取材・撮影・デザインまで">
                     </div>
-                    <div class="food_service_right">
-                        <h3>最高級のマダガスカル産<br>バニラビーンズを使用</h3>
-                        <p>
-                        浅草本店・渋谷マルイ店、都内２店舗で展開する日本初のバニラスイーツ専門店「東京バニラファクトリー」。弊社で最も新しい事業として力を入れており、日本テレビ『ヒルナンデス！』『ゼロイチ』と、人気番組でも紹介されるなど話題となっております。<br>前述のテレビ放送時には通販サイトにて、番組限定のセット商品を販売。催事イベントに出店するなど、通常の店舗販売だけでなく積極的に存在をアピールし、ブランドを周知。短期出店、イベント販売、コラボ企画など随時受け付けております。
-                        </p>
-                        <div class="food_servive_btn"><a href="https://www.tokyovanilla-factory.com/">東京バニラファクトリー 公式サイト</a></div>
+                    <div>
+                        <div class="strongPoint_item_head">
+                            <h4>企画立案から取材・撮影・デザインまで</h4>
+                            <h3>紙媒体を制作して<br>30年の歴史があります</h3>
+                        </div>
+                        <p>国内・海外の観光情報誌、雑誌やムック、テレビなどの番組本、ファッションカタログ、企業PR誌や各政府観光局のパンフレットなど、年間100冊以上の制作に携わっています。 企画立案から取材、撮影、原稿執筆、校正、デザイン、印刷までの一連の作業を、まとめてお任せいただけます。 社内外に経験豊富な編集者、ライター、フォトグラファーを多数抱えており、クオリティの高い成果物で多くのクライアント様にご満足いただいています。</p>
                     </div>
                 </div>
             </div>

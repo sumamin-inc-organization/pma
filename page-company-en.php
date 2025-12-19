@@ -21,7 +21,7 @@
                     <span class="language_switch_text">Japanese</span>
                 </a>
             </div>
-            <div class="company_image">
+            <div class="lower_kv">
                 <picture>
                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/company/company_main-watermark-sp.webp" media="(max-width: 767px)">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/company/company_main-watermark.webp" alt="会社概要">

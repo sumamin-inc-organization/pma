@@ -31,17 +31,31 @@ function load_assets() {
     }
 	if( is_page('service-editorial') ){
 		wp_enqueue_style( 'page.contact_style', get_stylesheet_directory_uri().'/assets/css/page.contact.css' );
-		wp_enqueue_style( 'service-common_style', get_stylesheet_directory_uri().'/assets/css/service/service-common.css' );
 		wp_enqueue_style( 'page.service-editorial_style', get_stylesheet_directory_uri().'/assets/css/service/page.service-editorial.css' );
 	}
-	if( is_page('service-media') ){
-		wp_enqueue_style( 'page.service-media_style', get_stylesheet_directory_uri().'/assets/css/service/page.service-media.css' );
+	if( is_page( 'service-media' ) ){
+		wp_enqueue_style( 'service-media', get_stylesheet_directory_uri().'/assets/css/service/page.service-media.css' );
 	}
-	if( is_page('service-media') ){
-		wp_enqueue_style( 'page.service-media_style', get_stylesheet_directory_uri().'/assets/css/service/page.service-media.css' );
+	if( is_page( 'service-contents' ) ){
+		wp_enqueue_style( 'service-contents', get_stylesheet_directory_uri().'/assets/css/service/page.service-contents.css' );
 	}
-	if( is_page('service-food') ){
-		wp_enqueue_style( 'page.service-food_style', get_stylesheet_directory_uri().'/assets/css/service/page.service-food.css' );
+	if( is_page( 'service-event' ) ){
+		wp_enqueue_style( 'service-event', get_stylesheet_directory_uri().'/assets/css/service/page.service-event.css' );
+	}
+	if( is_page( 'service-consulting' ) ){
+		wp_enqueue_style( 'service-consulting', get_stylesheet_directory_uri().'/assets/css/service/page.service-consulting.css' );
+	}
+	if( is_page( 'service-apparel' ) ){
+		wp_enqueue_style( 'service-apparel', get_stylesheet_directory_uri().'/assets/css/service/page.service-apparel.css' );
+	}
+	if( is_page( 'service-ec' ) ){
+		wp_enqueue_style( 'service-ec', get_stylesheet_directory_uri().'/assets/css/service/page.service-ec.css' );
+	}
+	if( is_page( 'service-sdgs' ) ){
+		wp_enqueue_style( 'service-sdgs', get_stylesheet_directory_uri().'/assets/css/service/page.service-sdgs.css' );
+	}
+	if( is_page( 'service-food' ) ){
+		wp_enqueue_style( 'service-food', get_stylesheet_directory_uri().'/assets/css/service/page.service-food.css' );
 	}
 	if( is_page('works') ){
 		wp_enqueue_style( 'page.works_style', get_stylesheet_directory_uri().'/assets/css/works/page.works.css' );

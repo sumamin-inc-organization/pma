@@ -1,157 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+/* common
+------------------------------------------------------------------------*/
 
-:root {
-    --fontNotoserifjp: "Noto Serif JP", serif;
+.service_content{
+    margin: 140px auto;
+    display: flex;
+    flex-flow: column;
+    gap: 100px;
 }
 
-.food_service_contents_wrap{
-    margin-top: 140px;
+.service_inner{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 100px;
 }
 
-.food_service_left{
-    width: 52%;
-    max-width: 620px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.food_service_left iframe{
-    width: 100%;
+.flex_680 div:nth-of-type(1){
+    flex: 1.8;
 }
 
-.food_service_right{
-    width: 40%;
-    max-width: 480px;
+.flex_600 div:nth-of-type(1){
+    flex: 1.3;
+}
+
+.flex_540 div:nth-of-type(1){
+    flex: 1.05;
+}
+
+.service_inner div:nth-of-type(2){
+    flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     gap: 40px;
+    padding-right: 40px;
 }
-.food_service_right h3{
-    font-size:var(--fontSize30);
+
+.service_inner div:nth-of-type(2)  {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.service_inner div:nth-of-type(2) h3{
+    font-family: var(--fontNotosansjp);
+    font-size: var(--fontSize30);
+    font-weight: 500;
     line-height: 1.8;
     letter-spacing: 0.04em;
 }
-.food_service_right p{
-    font-size:var(--fontSize16);
-    line-height: 1.8;
-}
 
-.food_servive_btn a{
-    background:#333333;
-    color:#fff;
-    padding:9px 58px 9px 28px;
-    position: relative;
-    border-radius: 6px;
+.service_inner div:nth-of-type(2) h4{
     font-family: var(--fontNotosansjp);
-    line-height: 1.5;
-    letter-spacing: 0.06em;
-    transition: 0.3s;
-    border:1px solid #333;
+    font-size: var(--fontSize20);
     font-weight: 500;
-}
-.food_servive_btn a:hover{
-    background: #fff;
-    color:#333;
-    border:1px solid #333;
-}
-.food_servive_btn a::before {
-    border-top: 1px solid #fff;
-    content: "";
-    right: 28px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: 0.3s;
-    width: 18px;
-}
-.food_servive_btn a::after {
-    border-left: 1px solid #fff;
-    content: "";
-    height: 6px;
-    right: 29px;
-    position: absolute;
-    top: calc(50% - (6px * cos(50deg) / 2));
-    transform: translateY(-50%) rotate(-50deg);
-    transition: 0.3s;
-    width: 1px;
-}
-.food_servive_btn a:hover:before{
-    border-top: 1px solid #333;
-}
-.food_servive_btn a:hover:after{
-    border-left: 1px solid #333;
+    line-height: 1.8;
+    letter-spacing: 0.04em;
 }
 
-.food_bottom{
-    margin-top: 100px;
+.service_inner div:nth-of-type(2) p{
+    font-size: var(--fontSize16);
+    line-height: 1.8;
+    text-align: justify;
 }
 
-/* PC/SP表示切り分け */
-.pc {
-    display: block;
-}
-.sp {
-    display: none;
+.flex-reverse{
+    flex-flow: row-reverse;
 }
 
+.flex-top{
+    align-items: start;
+}
 
-@media screen and (max-width: 1024px) {
-    .food_service_right h3{
-        font-size:3.2vw;
+.flex-reverse div:nth-of-type(2){
+    padding-right: 0;
+    padding-left: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .service_content{
+        margin: 60px auto;
+        gap: 60px;
     }
-    .food_servive_btn a{
-        font-size:1.55vw;
-        white-space: nowrap;
-    }
-}
 
-@media screen and (max-width: 983px) {
-    .pc {
-        display: none;
-    }
-    .sp {
-        display: block;
-    }
-}
-@media screen and (max-width: 768px) {
-    .food_service_contents_wrap{
-        margin-top: 60px;
-        flex-direction: column;
+    .service_flex div:nth-of-type(2){
         gap: 30px;
-    }
-    .food_service_left{
-        width: 100%;
-    }
-    .food_service_right{
-        width: 100%;
-        gap: 30px;
-    }
-    .food_service_right h3{
-        font-size:24px;
-    }
-    .food_service_right p{
-        font-size:16px;
-    }
-    .food_servive_btn a{
-        display: block;
-        width: 100%;
-        font-size:16px;
-    }
-    .food_bottom{
-        margin-top: 60px;
-    }
-    .food_servive_btn a::before{
-        right:18px;
-    }
-    .food_servive_btn a::after{
-        right:20px;
-    }
-    .first_section{
-        overflow-x: hidden;
-        width: 100%;
-        position: relative;
+        padding-right: 0;
+        padding-left: 0;
     }
 }
