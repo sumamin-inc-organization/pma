@@ -1,0 +1,120 @@
+.service_content{
+    margin: 140px auto 0;
+    display: flex;
+    flex-flow: column;
+    gap: 140px;
+}
+
+.service_inner{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.service_inner1{
+    padding-bottom: 0;
+}
+
+.service_inner3{
+    padding-top: 140px;
+    padding-bottom: 140px;
+    border-top: solid 1px #333;
+    border-bottom: solid 1px #333;
+}
+
+.service_inner4{
+    align-items: start;
+}
+
+.service_inner2,
+.service_inner4{
+    flex-flow: row-reverse;
+}
+
+.service_inner .service_text{
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+    padding-right: 40px;
+}
+
+.service_inner2 .service_text{
+    padding-right: 0;
+    padding-left: 40px;
+}
+
+.service_header{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+.service_inner .service_text h3{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+
+.service_inner .service_text h4{
+    font-family: var(--fontNotosansjp);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.service_inner .service_text p{
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.service_inner1 .service_img,
+.service_inner4 .service_img{
+    flex: 1.05;
+}
+
+.service_inner2 .service_img,
+.service_inner3 .service_img{
+    flex: 1.3;
+}
+
+@media screen and (max-width: 1024px) {
+    .service_content{
+        margin: 60px auto 0;
+        gap: 60px;
+    }
+
+    .service_inner,
+    .service_inner2{
+        flex-flow: column;
+        gap: 30px;
+    }
+
+    .service_inner3{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .service_inner .service_text,
+    .service_inner2 .service_text,
+    .service_inner3 .service_text,
+    .service_inner4 .service_text{
+        gap: 30px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .service_header{
+        gap: 10px;
+    }
+
+    .service_inner .service_text h3{
+        font-size: 46px;
+    }
+
+    .service_inner .service_text h4{
+        font-size: 16px;
+    }
+}

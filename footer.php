@@ -1,6 +1,6 @@
                     <!-- footer start -->
                     <footer class="footer">
-                        <div class="container">
+                        <div class="">
                             <section class="contact">
                                 <div class="contact__inner">
                                     <h2 class="contact__title fadeIn js-fadeIn">CONTACT</h2>

@@ -45,10 +45,10 @@ function load_assets() {
 	if( is_page( 'service-consulting' ) ){
 		wp_enqueue_style( 'service-consulting', get_stylesheet_directory_uri().'/assets/css/service/page.service-consulting.css' );
 	}
-	if( is_page( 'service-apparel' ) ){
+	if( is_page( 'service-apparel' ) || is_page('service-apparel-en') ){
 		wp_enqueue_style( 'service-apparel', get_stylesheet_directory_uri().'/assets/css/service/page.service-apparel.css' );
 	}
-	if( is_page( 'service-ec' ) ){
+	if( is_page( 'service-ec' ) || is_page('service-ec-en')  ){
 		wp_enqueue_style( 'service-ec', get_stylesheet_directory_uri().'/assets/css/service/page.service-ec.css' );
 	}
 	if( is_page( 'service-sdgs' ) ){
