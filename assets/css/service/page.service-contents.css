@@ -12,7 +12,7 @@
 }
 
 /* 共通 */
-.service_inner > div:nth-of-type(2){
+.service_inner .service_text{
     flex: 1;
     display: flex;
     flex-flow: column;
@@ -20,7 +20,7 @@
     padding-right: 40px;
 }
 
-.service_inner div:nth-of-type(2) h3{
+.service_inner .service_text h3{
     font-family: var(--fontNotosansjp);
     font-size: 30px;
     font-weight: 500;
@@ -28,27 +28,27 @@
     letter-spacing: 0.04em;
 }
 
-.service_inner div:nth-of-type(2) p{
+.service_inner .service_text p{
     font-size: 16px;
     line-height: 1.8;
     text-align: justify;
 }
 
 /* 680px */
-.service_inner:nth-of-type(1) > div:nth-of-type(1){
+.service_inner1 .service_img{
     flex: 1.8;
 }
 
 /* 600px */
-.service_inner:nth-of-type(2){
+.service_inner2{
     flex-flow: row-reverse;
 }
 
-.service_inner:nth-of-type(2) > div:nth-of-type(1){
+.service_inner2 .service_img{
     flex: 1.3;
 }
 
-.service_inner:nth-of-type(2) > div:nth-of-type(2){
+.service_inner2 .service_text{
     padding-right: 0;
     padding-left: 40px;
 }
@@ -60,19 +60,19 @@
     }
 
     .service_inner,
-    .service_inner:nth-of-type(2){
+    .service_inner2{
         flex-flow: column;
         gap: 30px;
     }
     
-    .service_inner > div:nth-of-type(2),
-    .service_inner:nth-of-type(2) > div:nth-of-type(2){
+    .service_inner .service_text,
+    .service_inner2 .service_text{
         gap: 30px;
         padding-right: 0;
         padding-left: 0;
     }
 
-    .service_inner div:nth-of-type(2) h3{
+    .service_inner .service_text h3{
         font-size: 24px;
     }
 }

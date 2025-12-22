@@ -246,12 +246,12 @@ section p {
 .service_btn{
     background:#333333;
     color:#fff;
-    padding:9px 58px 9px 28px;
+    padding:9px 0;
     position: relative;
     border-radius: 6px;
     font-family: var(--fontNotosansjp);
     line-height: 1.5;
-    letter-spacing: 0.06em;
+    letter-spacing: 0;
     transition: 0.3s;
     border:1px solid #333;
     font-weight: 500;
