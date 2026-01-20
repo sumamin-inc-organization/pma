@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-<?php get_header(); ?>
-
-<?php get_template_part('template-parts/news-archive'); ?>
-
-=======
 <?php
 // 表示したいカテゴリーのスラッグを、希望の順番で配列に記載
 $target_slugs = array('production', 'media', 'contents', 'pr', 'consulting', 'apparel', 'ec', 'sdgs', 'food');
@@ -26,13 +20,18 @@ foreach ($target_slugs as $slug) {
 
 //　キーワード検索で表示を絞り込み
 $paged = get_query_var('paged') ? get_query_var('paged') : 1;
-$search_query = isset($_GET['search']) ? sanitize_text_field($_GET['search']) : '';
+$search_query = isset($_GET['s']) ? sanitize_text_field($_GET['s']) : '';
 
 $args = array(
     'post_type' => 'post',
     'posts_per_page' => 10,
     'paged' => $paged,
 );
+
+if ( is_category() ) {
+    $args['category__in'] = array( get_queried_object_id() );
+}
+
 
 // 検索ワードがあれば、クエリに追加
 if (!empty($search_query)) {
@@ -50,11 +49,11 @@ if ($exclude_category_id) {
 
 $query = new WP_Query($args);
 ?>
-<?php get_header(); ?>
+
 <main id="news" class="page_main">
     <div class="news_inner page_inner">
         <section id="newsMain" class="first_section">
-            <div class="page_title_wrap">
+            <div class="page_title_wrap center_line">
                 <div class="page_title">
                     <h1 class="page_title_main">NEWS</h1>
                     <p class="page_title_sub">お知らせ</p>
@@ -71,7 +70,7 @@ $query = new WP_Query($args);
                         <div class="news_aside_inner">
                             <div class="news_aside_search">
                                 <form method="get" action="<?php echo esc_url(get_permalink()); ?>" class="search-form">
-                                    <input type="text" name="search" value="<?php echo esc_attr($search_query); ?>" placeholder="検索" />
+                                    <input type="text" name="s" value="<?php echo esc_attr($search_query); ?>" placeholder="検索" />
                                     <button class="news_aside_search_btn" type="submit">
                                         <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9.07129 0.500488C13.8048 0.500619 17.6426 4.3382 17.6426 9.07178C17.6424 13.8052 13.8048 17.6429 9.07129 17.6431C4.33771 17.6431 0.50013 13.8053 0.5 9.07178C0.5 4.33812 4.33763 0.500488 9.07129 0.500488Z" stroke="#333333"/>
@@ -84,6 +83,15 @@ $query = new WP_Query($args);
                                 <h3 class="news_aside_list_title_text">CATEGORY</h3>
                             </div>
                             <ul class="news_aside_list">
+                                <li class="news_aside_item">
+                                    <a href="<?php echo esc_url( home_url('/news/') ); ?>">
+                                        <p class="news_aside_item_title">すべて</p>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#333333"></path>
+                                            <path d="M10.668 8L13.116 10.452H0" stroke="white" stroke-miterlimit="10"></path>
+                                        </svg>
+                                    </a>
+                                </li>
                                 <?php foreach ($sorted_categories as $category) : ?>
                                 <li class="news_aside_item">
                                     <a href="<?php echo esc_url(get_category_link($category->term_id)); ?>">
@@ -108,10 +116,31 @@ $query = new WP_Query($args);
                                         <div class="news_post_info">
                                             <span class="news_post_date"><?php the_time('Y.m.d'); ?></span>
                                             <?php
-                                                $categories = get_the_category();
-                                                if ( ! empty( $categories ) ) {
-                                                    echo '<span class="news_post_category">' . esc_html( $categories[0]->name ) . '</span>';
+                                            $target_slugs = array(
+                                                'production',
+                                                'media',
+                                                'contents',
+                                                'pr',
+                                                'consulting',
+                                                'apparel',
+                                                'ec',
+                                                'sdgs',
+                                                'food'
+                                            );
+                                            $categories = get_the_category();
+                                            $matched = array();
+                                            if ( ! empty( $categories ) ) {
+                                                foreach ( $categories as $category ) {
+                                                    if ( in_array( $category->slug, $target_slugs, true ) ) {
+                                                        $matched[] = esc_html( $category->name );
+                                                    }
                                                 }
+                                            }
+                                            if ( ! empty( $matched ) ) {
+                                                foreach ( $matched as $name ) {
+                                                    echo '<span class="news_post_category">' . $name . '</span>';
+                                                }
+                                            }
                                             ?>
                                         </div>
                                         <p class="news_post_title"><?php the_title(); ?></p>
@@ -126,7 +155,6 @@ $query = new WP_Query($args);
                             <?php else : ?>
                             <p>該当する投稿がありませんでした。</p>
                             <?php endif; ?>
-
                             <?php wp_reset_postdata(); ?>
                         </div>
                     </div>
@@ -138,5 +166,3 @@ $query = new WP_Query($args);
         </section>
     </div>
 </main>
->>>>>>> origin/main
-<?php get_footer(); ?>

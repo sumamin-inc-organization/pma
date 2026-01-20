@@ -2,7 +2,11 @@
 <main id="works" class="page_main">
     <div class="works_inner">
         <section id="worksMain" class="first_section">
+<<<<<<< HEAD
+            <div class="page_title_wrap center_line">
+=======
             <div class="page_title_wrap">
+>>>>>>> origin/main
                 <div class="page_title">
                     <h1 class="page_title_main">WORKS</h1>
                     <p class="page_title_sub">実績紹介</p>

@@ -67,20 +67,14 @@
                             $title = get_the_title();
                             // 本文を取得
                             $content = get_the_content();
-                                                        
-                            // 本文の最初の「。」までを抽出
-                            $content_excerpt = mb_substr($content, 0, mb_strpos($content, '。') + 1);
-                            if ($content_excerpt === false) {
-                                $content_excerpt = $content; // 「。」がない場合は全文を表示
-                            }
-                                                        
+                            // 本文を取得（全文）
+                            $content_excerpt = get_the_content();
                             // アイキャッチ画像を取得
                             if (has_post_thumbnail()) {
                                 $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
                             } else {
                                 $thumbnail_url = 'アイキャッチ画像が設定されていません';
                             }
-                                                        
                                 // 投稿のURLを取得
                             $post_url = get_permalink();
                     ?>
@@ -238,8 +232,8 @@
                                     class="ecNav__contents--img ecNav__img">
                             </div>
                             <div class="ecNav__sec--wrap">
-                                <h4 class="ecNav__contents--title">Lilly & Emma </h4>
-                                <p class="ecNav__contents--text">ハワイ生まれの姉妹が織り成すリゾート･アイランド･ファッション</p>
+                                <h4 class="ecNav__contents--title">Lilly & Emma</h4>
+                                <p class="ecNav__contents--text">ハワイ生まれの姉妹によるリゾート･アイランド･ファッション</p>
                             </div>
                         </a>
                     </li>

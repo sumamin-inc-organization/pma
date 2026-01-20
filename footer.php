@@ -1,7 +1,7 @@
                     <!-- footer start -->
                     <footer class="footer">
-                        <div class="">
-                            <section class="contact">
+                        <div>
+                            <div class="footer_content contact">
                                 <div class="contact__inner">
                                     <h2 class="contact__title fadeIn js-fadeIn">CONTACT</h2>
                                     <ul class="contact__more">
@@ -32,13 +32,13 @@
                                                 class="pc">&emsp;</span>FAX番号：03-5215-0324</p>
                                     </div>
                                 </div>
-                            </section>
-                            <section class="contents">
+                            </div>
+                            <div class="footer_content contents">
                                 <div class="contents__wrap">
                                     <h3 class="contents__title">CONTENTS</h3>
                                     <ul class="contents__inner">
                                         <li class="contents__item">
-                                            <h4 class="contents__item--title is-icon open">SERVICES</h4>
+                                            <h4 class="contents__item--title is-icon">SERVICES</h4>
                                             <div class="contents__itemBox js-accordion">
                                                 <a href="<?php echo esc_url(home_url('/service-editorial/')); ?>" class="contents__link">
                                                     <p class="contents__item--inside">編集プロダクション事業</p>
@@ -70,7 +70,7 @@
                                             </div>
                                         </li>
                                         <li class="contents__item">
-                                            <h4 class="contents__item--title is-icon open">
+                                            <h4 class="contents__item--title is-icon">
                                                 WORKS
                                             </h4>
                                             <div class="contents__itemBox js-accordion">
@@ -117,8 +117,7 @@
                                                     NEWS
                                                 </h4>
                                             </a>
-                                            <h4 class="contents__item--title is-mt20
-                                            is-icon open">
+                                            <h4 class="contents__item--title is-mt20 is-icon">
                                                 COMPANY
                                             </h4>
                                             <div class="contents__itemBox js-accordion">
@@ -129,8 +128,7 @@
                                                     <p class="contents__item--inside">ビジョン・理念</p>
                                                 </a>
                                             </div>
-                                            <h4 class="contents__item--title is-mt20
-                                            is-icon open">
+                                            <h4 class="contents__item--title is-mt20 is-icon">
                                                 RECRUIT
                                             </h4>
                                             <div class="contents__itemBox js-accordion">
@@ -144,8 +142,8 @@
                                 <a href="#body" class="backTop__link">
                                     <p class="backTop__text">BACK TO TOP</p>
                                 </a>
-                            </section>
-                            <section class="footer__bottom">
+                            </div>
+                            <div class="footer_content footer__bottom">
                                 <div class="footer__bottom--wrap">
                                     <ul class="footer__other">
                                         <li class="footer__other--item">
@@ -160,7 +158,7 @@
                                     </ul>
                                     <p class="copyRight">Copyright &copy; PMA TRYANGLE ALL RIGHTS RESERVED</p>
                                 </div>
-                            </section>
+                            </div>
                         </div>
                     </footer>
                 </div>

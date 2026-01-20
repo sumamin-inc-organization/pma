@@ -1,15 +1,10 @@
 <?php get_header(); ?>
-<main id="service-apparel-en" class="page_main">
+<main id="service-media" class="page_main">
     <section class="first_section">
         <div class="page_title_wrap">
-<<<<<<< HEAD
             <div class="page_title page_title_receive">
-                <h2 class="section_title">APPAREL</h2>
-=======
-            <div class="page_title">
-                <h2 class="page_title_main">APPAREL</h2>
->>>>>>> origin/main
-                <p class="page_title_sub">アパレル事業</p>
+                <h2 class="section_title">MEDIA</h2>
+                <p class="page_title_sub">メディア事業（LaniLani）</p>
             </div>
         </div>
         <div class="language_switch_wrap">
@@ -26,64 +21,89 @@
             </a>
         </div>
         <div class="service_description">
-            <p>Operates the company-owned select shop ‘Lilly & Emma’ on Waikiki's Kalakaua Avenue.</p>
+            <p>We operate travel media platforms featuring destinations such as Hawaii, as well as lifestyle media specifically tailored for affluent individuals.</p>
         </div>
         <div class="lower_kv">
             <picture>
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service-apparel/kv-sp.webp" media="(max-width: 767px)">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-apparel/kv.webp" alt="アパレル事業">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/service-media/kv-sp.webp" media="(max-width: 767px)">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-media/kv.webp" alt="メディア事業">
             </picture>
         </div>
         <div class="service_content">
             <div class="service_inner service_inner1">
-                <div class="service_img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-apparel/apparel1.webp" alt="Lilly & Emma">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-apparel/apparel2.webp" alt="Lilly & Emma">
+                <div class="service_img slide_img">
+                    <div class="slider-container">
+                        <div class="image-container">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-media/media1.webp" alt="LaniLani">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-media/media1-1.webp" alt="LaniLani">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-media/media1-2.webp" alt="LaniLani">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-media/media1-3.webp" alt="LaniLani">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-media/media1-4.webp" alt="LaniLani">
+                        </div>
+                    </div>
                 </div>
                 <div class="service_text">
-                    <h3>Selling original items<br>and select items</h3>
+                    <div class="service_header">
+                        <h4>Tourism Information Media</h4>
+                        <h3>LaniLani</h3>
+                    </div>
                     <p>
-                        The stylish and elegant older sister, Lily, and the energetic and cute younger sister, Emma. We operate a select shop in Honolulu, Hawaii, based on the concept of “the two sisters' closet.” The brand's T-shirts featuring the “FEEL ALOHA” logo became a huge hit thanks to social media. Taking selfies wearing them and posting them on Instagram became a trend in Hawaii.<br><br>
-                        Additionally, items crafted from a world-patented special material with superior waterproof and stain-resistant properties have generated buzz. Our original collaboration goods are utilized as promotional items by numerous companies.
+                        "Lani" means "paradise" in Hawaiian. It is a travel media platform built on the concept of "discovering true paradise." With Hawaii as its core, Lani expands its reach to other top island destinations, including Okinawa—one of Japan’s premier resort regions—along with Hokkaido, Taiwan, the Philippines, and other popular travel spots.
                     </p>
-<<<<<<< HEAD
-                    <a class="service_btn" href="https://lilly-and-emma.com/" target="_blank">
-                        <span>Lilly & Emma Official Website</span>
-                        <div class="service_arrow"></div>
-                    </a>
-=======
-                    <a class="service_btn" href="https://lilly-and-emma.com/" target="_blank">Lilly & Emma Official Website</a>
->>>>>>> origin/main
                 </div>
             </div>
             <div class="service_inner service_inner2">
                 <div class="service_img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-apparel/apparel3.webp" alt="特殊な多機能性素材">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-media/media2.webp" alt="LaniLani">
                 </div>
                 <div class="service_text">
-                    <h3>World's First!<br>Customizable Special Multi-Functional Material</h3>
+                    <div class="service_header">
+                        <h4>WEB＆SNS</h4>
+                        <h3>LaniLani</h3>
+                    </div>
                     <p>
-                        Lilly & Emma's SDGs Promotion Project utilizes comfortable, multifunctional materials. It employs technology that allows various functions—such as antibacterial and self-cleaning properties—to be freely combined and incorporated into apparel and products. A key feature is the ability to customize functions according to specific purposes.
+                        Each media outlet actively utilizes websites and social media. The digital expansion concept is “to experience the tropical paradise of Hawaii and a resort atmosphere anytime, even while in Japan.” Through updates featuring original columns by local writers and web-exclusive content, we provide the latest information from the destination. Furthermore, through partnerships with numerous major information media outlets, we can disseminate information not only to LaniLani users but also to a much broader audience.
                     </p>
+                    <a class="service_btn" href="https://www.lanilanihawaii.com/" target="_blank">
+                        <span>View more</span>
+                        <div class="service_arrow"></div>
+                    </a>
                 </div>
             </div>
             <div class="service_inner service_inner3">
                 <div class="service_img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-apparel/apparel4.webp" alt="快適多機能性素材">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-media/media3.webp" alt="PREMIUM ARCADE">
                 </div>
                 <div class="service_text">
+                    <div class="service_header">
+                        <h4>Resort-Specialized E-Commerce Mall</h4>
+                        <h3>PREMIUM<br>ARCADE</h3>
+                    </div>
                     <p>
-                        We consider Hawaii's beautiful nature, the global environment, related companies and staff, working conditions, and other stakeholders from a sustainability perspective, and we do not engage in excessive production.<br>
-                        OEM development and collaborations are also possible.
+                        PREMIUM ARCADE delivers items and information for enjoying a premium lifestyle. We feature carefully selected items from Hawaii and other resorts, as well as premium items from across Japan, alongside the latest travel information.
                     </p>
-<<<<<<< HEAD
-                    <a class="service_btn" href="<?php echo esc_url(home_url('/apparel-lp/')); ?>">
+                    <a class="service_btn" href="https://pma-t.co.jp/premium-arcade/" target="_blank">
                         <span>View more</span>
                         <div class="service_arrow"></div>
                     </a>
-=======
-                    <a class="service_btn" href="<?php echo esc_url(home_url('/apparel-lp/')); ?>">View more</a>
->>>>>>> origin/main
+                </div>
+            </div>
+            <div class="service_inner service_inner4">
+                <div class="service_img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-media/media4.webp" alt="aristos">
+                </div>
+                <div class="service_text">
+                    <div class="service_header">
+                        <h4>Membership-based media for affluent individuals</h4>
+                        <h3>aristos</h3>
+                    </div>
+                    <p>
+                        aristos is a new luxury magazine for affluent individuals pursuing a sophisticated lifestyle. It stands apart from conventional publications as an innovative media platform offering exceptional value and inspiration. Aristos is a one-of-a-kind entity delivering unique experiences to its readers. We provide exclusive information found nowhere else—access to extraordinary places typically inaccessible and rare items unavailable on the market.
+                    </p>
+                    <a class="service_btn" href="https://aristos-media.com/" target="_blank">
+                        <span>View more</span>
+                        <div class="service_arrow"></div>
+                    </a>
                 </div>
             </div>
         </div>

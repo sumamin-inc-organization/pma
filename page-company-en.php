@@ -2,7 +2,7 @@
 <main id="company" class="page_main">
     <div class="company_inner page_inner">
         <section id="companyInfo" class="first_section">
-            <div class="page_title_wrap">
+            <div class="page_title_wrap center_line">
                 <div class="page_title">
                     <h1 class="page_title_main">COMPANY</h1>
                     <p class="page_title_sub">企業情報</p>
@@ -35,7 +35,7 @@
             <div class="column_2 aboutUs_inner">
                 <div class="page_title_wrap">
                     <div class="page_title">
-                        <h2 class="page_title_main">ABOUT <br class="pc-more">US</h2>
+                        <h2 class="section_title">ABOUT <br class="pc-more">US</h2>
                     </div>
                 </div>
                 <div class="aboutUs_content">
@@ -71,7 +71,7 @@
                             </tr>
                         </table>
                         <div class="aboutUs_map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.375604555746!2d139.7439063!3d35.692373599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c68ee8ffde3%3A0x2b68ebeda2f52b62!2z5qCq5byP5Lya56S-UC5NLkEu44OI44Op44Kk44Ki44Oz44Kw44Or!5e0!3m2!1sja!2sjp!4v1760525128148!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.375604555746!2d139.7439063!3d35.692373599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c68ee8ffde3%3A0x2b68ebeda2f52b62!2z5qCq5byP5Lya56S-UC5NLkEu44OI44Op44Kk44Ki44Oz44Kw44Or!5e0!3m2!1sja!2sjp!4v1760525128148!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
             <div class="column_2 history_inner">
                 <div class="page_title_wrap">
                     <div class="page_title">
-                        <h2 class="page_title_main">HISTORY</h2>
+                        <h2 class="section_title">HISTORY</h2>
                     </div>
                 </div>
                 <div class="history_content">
@@ -168,7 +168,7 @@
             <div class="column_2 suppliers_inner">
                 <div class="page_title_wrap">
                     <div class="page_title">
-                        <h2 class="page_title_main">SUPPLIERS</h2>
+                        <h2 class="section_title">SUPPLIERS</h2>
                     </div>
                 </div>
                 <div class="suppliers_content">

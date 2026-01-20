@@ -44,10 +44,6 @@ body {
 	overflow-x: hidden;
 }
 
-.mainContent {
-	overflow-x: hidden;
-}
-
 a {
 	color: var(--colorWhite);
 	text-decoration: none;
@@ -122,7 +118,7 @@ summary::-webkit-details-marker {
 }
 
 /* -------------------------
-loaging
+loading
 ----------------------------*/
 /* ローディング画面のスタイル */
 #loading {
@@ -280,7 +276,6 @@ header
 	position: absolute;
 	display: block;
 	z-index: 9999;
-	webkit-transition: all 0.3s ease-in;
 	-moz-transition: all 0.3s ease-in;
 	-ms-transition: all 0.3s ease-in;
 	-o-transition: all 0.3s ease-in;
@@ -397,7 +392,7 @@ header
 }
 .toggle-icon__wrap.absolute-elem {
 	position: absolute;
-	top: 2px;
+	top: 5px;
 	right: 0;
 	padding: 10px;
 	z-index: 1000;
@@ -417,6 +412,11 @@ footer
 	color: var(--colorWhite);
 	margin-top: 140px;
 	padding: 100px 0;
+}
+
+.footer_content {
+	max-width: 1200px;
+    margin: 0 auto;
 }
 
 .contact__inner {
@@ -455,7 +455,7 @@ footer
 .contact__more--btn::before {
 	border-top: 1px solid var(--colorLightBlack);
 	content: "";
-	left: 0;
+	left: -1px;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -467,9 +467,9 @@ footer
 	border-left: 1px solid var(--colorLightBlack);
 	content: "";
 	height: 10px;
-	left: 30px;
+	left: 28px;
 	position: absolute;
-	top: 44%;
+	top: 43%;
 	transform: translateY(-50%) rotate(-50deg);
 	transition: 0.3s;
 	width: 1px;
@@ -540,13 +540,13 @@ footer
 
 .contents {
 	margin-top: 80px;
-	padding-bottom: 80px;
 	position: relative;
 }
 
 .contents__wrap {
 	display: flex;
-	gap: 180px;
+	gap: 12vw;
+	padding-bottom: 80px;
 }
 
 .contents__title {
@@ -565,7 +565,7 @@ footer
 
 .contents__inner {
 	display: grid;
-	gap: 100px;
+	gap: 7vw;
 	grid-template-columns: repeat(3, 1fr);
 }
 
@@ -594,13 +594,13 @@ footer
 	content: "";
 	height: 130px;
 	position: absolute;
-	right: -2vw;
+	right: 0;
 	width: 25px;
 	writing-mode: vertical-rl;
 }
 
 .backTop__link::after {
-	background-image: url(../img/footer/img-back_arrow.png);
+	background-image: url(../../img/footer/img-back_arrow.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -673,7 +673,17 @@ footer
 	}
 }
 
+@media screen and (max-width: 1260px) {
+	.footer_content {
+		padding: 0 30px;
+	}
+}
+
 @media screen and (max-width: 1100px) {
+	.contents__title {
+		font-size: 46px;
+	}
+
 	.footer__other {
 		gap: 40px;
 	}
@@ -683,13 +693,31 @@ footer
 	}
 }
 
+@media screen and (max-width: 1024px) {
+	.contact__office--wrap{
+		gap: 5vw;
+	}
+
+	.contact__office--imgBox{
+		width: 35vw;
+	}
+}
+
 @media screen and (max-width: 1000px) {
 	.contents__wrap {
-		gap: 90px;
+		gap: 40px;
 	}
 
 	.contents__inner {
-		gap: 80px;
+		gap: 40px;
+	}
+
+	.contact__office--wrap {
+		align-items: start;
+		flex-direction: column;
+		gap: 30px;
+		margin-top: 40px;
+		padding-bottom: 50px;
 	}
 
 	.footer__bottom--wrap {
@@ -703,6 +731,14 @@ footer
 	.footer {
 		margin-top: 60px;
 		padding: 60px 0;
+	}
+
+	.footer_content {
+		padding: 0 20px;
+	}
+
+	.contents__title {
+		writing-mode: unset;
 	}
 
 	.contact__inner {
@@ -729,12 +765,12 @@ footer
 	}
 
 	.contact__more--btn::before {
-		width: 29px;
+		width: 20px;
 	}
 
 	.contact__more--btn::after {
 		height: 8px;
-		left: 25px;
+		left: 15px;
 		top: 40%;
 	}
 
@@ -742,16 +778,8 @@ footer
 		margin-top: 25px;
 	}
 
-	.contact__office--wrap {
-		align-items: start;
-		flex-direction: column;
-		gap: 30px;
-		margin-top: 40px;
-		padding-bottom: 50px;
-	}
-
 	.contact__office--imgBox {
-		max-width: 250px;
+		width: 235px;
 	}
 
 	.contact__office--info {
@@ -766,11 +794,7 @@ footer
 	.contents__wrap {
 		flex-direction: column;
 		gap: 30px;
-	}
-
-	.contents__title {
-		font-size: 46px;
-		writing-mode: unset;
+		padding-bottom: 0;
 	}
 
 	.contents__item--title {
@@ -788,6 +812,7 @@ footer
 
 	.backTop__link {
 		bottom: -220px;
+		right: 2vw;
 		height: 120px;
 		width: 20px;
 	}
@@ -830,7 +855,7 @@ footer
 	}
 
 	.is-icon::after {
-		background-image: url(../img/footer/icon-plus.svg);
+		background-image: url(../../img/footer/icon-plus.svg);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -845,7 +870,7 @@ footer
 	}
 
 	.is-icon.open::after {
-		background-image: url(../img/footer/icon-minus.svg);
+		background-image: url(../../img/footer/icon-minus.svg);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -908,12 +933,12 @@ bogo language switcher
 	gap: 4px;
 	background-color: #333;
 	border-radius: 6px;
-	padding: 10px 24px;
+	padding: 5px 24px;
 }
 .language_switch_text {
 	color: var(--colorWhite);
 	font-family: var(--fontNotosansjp);
-	font-size: 16px;
+	font-size: var(--fontSize16);
 	font-weight: 500;
 	line-height: 1.7;
 }
@@ -932,6 +957,6 @@ bogo language switcher
 	display: block;
 }
 .bogo-language-switcher li a::before {
-	content: url(../img/common/earth.svg);
+	content: url(../../img/common/earth.svg);
 	margin-right: 6px;
 }

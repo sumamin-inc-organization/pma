@@ -33,8 +33,9 @@ function load_assets() {
 		wp_enqueue_style( 'page.contact_style', get_stylesheet_directory_uri().'/assets/css/page.contact.css' );
 		wp_enqueue_style( 'page.service-editorial_style', get_stylesheet_directory_uri().'/assets/css/service/page.service-editorial.css' );
 	}
-	if( is_page( 'service-media' ) ){
+	if( is_page('service-media') || is_page('service-media-en') ){
 		wp_enqueue_style( 'service-media', get_stylesheet_directory_uri().'/assets/css/service/page.service-media.css' );
+		wp_enqueue_script( 'page.service.media_script', get_stylesheet_directory_uri().'/assets/js/page.service.media.js', array(), null, true );
 	}
 	if( is_page( 'service-contents' ) ){
 		wp_enqueue_style( 'service-contents', get_stylesheet_directory_uri().'/assets/css/service/page.service-contents.css' );
@@ -68,7 +69,7 @@ function load_assets() {
 	if ( is_page( array( 'works-media', 'works-contents', 'works-event', 'works-consulting', 'works-apparel', 'works-ec', 'works-sdgs', 'works-food') ) ) {
 		wp_enqueue_style( 'works-common_style', get_stylesheet_directory_uri().'/assets/css/works/works-common.css' );
 	}
-	if( is_page('news') ){
+	if ( is_page('news') || is_archive() ) {
 		wp_enqueue_style( 'page.news_style', get_stylesheet_directory_uri().'/assets/css/page.news.css' );
 	}
 	if( is_page('vision') ){

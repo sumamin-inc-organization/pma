@@ -17,15 +17,24 @@
     width: 100%;
 }
 
+.food_service_movie{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
 .food_service_right{
     width: 40%;
     max-width: 480px;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding-right: 40px;
 }
 .food_service_right h3{
-    font-size:var(--fontSize30);
+    font-family: var(--fontNotosansjp);
+    font-size: 30px;
+    font-weight: 500;
     line-height: 1.8;
     letter-spacing: 0.04em;
 }
@@ -47,12 +56,25 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .food_service_right h3{
-        font-size:3.2vw;
+    .food_service_contents_wrap{
+        flex-flow: column;
+        gap: 30px;
     }
-    .service_btn a{
-        font-size:1.55vw;
-        white-space: nowrap;
+    .food_service_left{
+        width: 100%;
+        max-width: 100%;
+    }
+    .food_service_left figure img{
+        width: 100%;
+    }
+    .food_service_right{
+        width: 100%;
+        max-width: 100%;
+        padding-right: 0;
+        gap: 30px;
+    }
+    .food_service_right h3{
+        font-size: 24px;
     }
 }
 
@@ -77,6 +99,7 @@
     .food_service_right{
         width: 100%;
         gap: 30px;
+        padding-right: 0;
     }
     .food_service_right h3{
         font-size:24px;
@@ -84,19 +107,8 @@
     .food_service_right p{
         font-size:16px;
     }
-    .service_btn a{
-        display: block;
-        width: 100%;
-        font-size:16px;
-    }
     .food_bottom{
         margin-top: 60px;
-    }
-    .service_btn a::before{
-        right:18px;
-    }
-    .service_btn a::after{
-        right:20px;
     }
     .first_section{
         overflow-x: hidden;

@@ -150,6 +150,7 @@
 	flex-direction: row;
 	align-items: center;
 	gap: 10px;
+	flex-wrap: wrap;
 }
 .news_post_date {
 	font-family: var(--fontNotosansjp);
@@ -160,14 +161,15 @@
 	min-width: 120px;
 }
 .news_post_category {
-	background-color: #666666;
-	border-radius: 9999px;
-	color: var(--colorWhite);
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 1;
-	padding: 6px 20px;
-	width: fit-content;
+	background-color: #707070;
+    border-radius: 100vmax;
+    color: var(--colorWhite);
+    font-family: var(--fontNotosansjp);
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.57;
+    padding: 0 20px;
+    width: fit-content;
 }
 .news_post_title {
 	color: var(--colorLightBlack);

@@ -137,7 +137,6 @@ nav.header__menu .menu__item:hover .dropdown-menu {
 	position: absolute;
 	display: block;
     z-index: 9999;
-    webkit-transition: all .3s ease-in;
     -moz-transition: all .3s ease-in;
     -ms-transition: all .3s ease-in;
     -o-transition: all .3s ease-in;
@@ -162,7 +161,7 @@ nav.header__menu .menu__item .dropdown-menu__item {
 }
 
 .header__menu .is-icon::after {
-	background-image: url(../img/footer/icon-plus.svg);
+	background-image: url(../../img/footer/icon-plus.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -177,7 +176,7 @@ nav.header__menu .menu__item .dropdown-menu__item {
 }
 
 .header__menu .is-icon.open::after {
-	background-image: url(../img/footer/icon-minus.svg);
+	background-image: url(../../img/footer/icon-minus.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

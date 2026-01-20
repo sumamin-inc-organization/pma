@@ -2,7 +2,11 @@
 <main id="recruit" class="page_main">
     <div class="recruit_inner">
         <section id="recruitMain" class="first_section">
+<<<<<<< HEAD
+            <div class="page_title_wrap center_line">
+=======
             <div class="page_title_wrap">
+>>>>>>> origin/main
                 <div class="page_title">
                     <h1 class="page_title_main">RECRUIT</h1>
                     <p class="page_title_sub">採用情報</p>
@@ -11,9 +15,16 @@
             <div class="recruit_description_wrap">
                 <p class="recruit_description">P.M.A.トライアングルでは、社内体制・業務発生状況を鑑み、不定期ですがスタッフ募集を行なっております。興味のある職種がおありの方は、該当の職種の募集状況・募集内容をご確認ください。<br>なお、現在、募集がない職種に関しても、先々募集の発生することがあります。</p>
             </div>
+<<<<<<< HEAD
+            <picture class="recruit_image">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/sp/recruit.webp" alt="P.M.Aトライアングル採用イメージ" media="(max-width: 767px)">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/recruit.webp" alt="P.M.Aトライアングル採用イメージ">
+            </picture>
+=======
             <div class="recruit_image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/recruit.webp" alt="P.M.Aトライアングル採用イメージ">
             </div>
+>>>>>>> origin/main
             <div class="recruit_content">
                 <div class="recruit_content_inner">
                     <div class="recruit_aside">

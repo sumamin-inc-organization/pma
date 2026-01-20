@@ -50,7 +50,7 @@
                 </div>
                 <nav class="header__container">
                     <ul class="headerList">
-                        <li class="headerList__item current">
+                        <li class="headerList__item">
                             <a href="<?= home_url() ?>">HOME</a>
                         </li>
                         <li class="headerList__item">

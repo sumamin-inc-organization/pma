@@ -33,7 +33,13 @@ section p {
 	}
 
 	section:not(:last-child) {
-		padding-bottom: 100px;
+		padding-bottom: 80px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.page_main {
+		padding-top: 140px;
 	}
 }
 
@@ -81,8 +87,8 @@ section p {
 	align-items: flex-end;
 }
 
-.page_title_main {
-	font-size: var(--fontSize100);
+.page_title_main{
+	font-size: var(--fontSize140);
 	font-weight: 500;
 	line-height: 1;
 	vertical-align: bottom;
@@ -100,17 +106,43 @@ section p {
 	vertical-align: bottom;
 }
 
+.section_title {
+	font-size: var(--fontSize100);
+	font-weight: 500;
+	line-height: 1;
+	vertical-align: bottom;
+}
+
 @media screen and (max-width: 1024px) {
 	.page_title_wrap {
 		position: relative;
+	}
+	.page_title{
+		flex-flow: column-reverse;
+		align-items: start;
+		gap: 0;
 	}
 	.page_title_main {
 		font-size: 60px;
 	}
 	.page_title_sub {
 		font-size: 16px;
-		position: absolute;
-		bottom: -50px;
+	}
+	.center_line.page_title_wrap{
+		padding-right: 0;
+		padding-bottom: 0;
+		border: none;
+	}
+	.center_line .page_title{
+		display: block;
+		width: 100%;
+	}
+	.center_line .page_title_main{
+		padding-bottom: 10px;
+		border-bottom: 1px solid var(--colorLightBlack);
+	}
+	.section_title{
+		font-size: 46px;
 	}
 }
 
@@ -257,37 +289,50 @@ section p {
     font-weight: 500;
 	width: 360px;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	gap: 15px;
 }
+
 .service_btn:hover{
     background: #fff;
     color:#333;
     border:1px solid #333;
 }
-.service_btn::before {
+
+.service_arrow{
+	position: relative;
+	width: 18px;
+}
+
+.service_arrow::before {
     border-top: 1px solid #fff;
     content: "";
-    right: 28px;
+    right: 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     transition: 0.3s;
-    width: 18px;
+    width: 100%;
 }
-.service_btn::after {
+
+.service_arrow::after {
     border-left: 1px solid #fff;
     content: "";
     height: 6px;
-    right: 29px;
+    right: 0;
     position: absolute;
     top: calc(50% - (6px * cos(50deg) / 2));
     transform: translateY(-50%) rotate(-50deg);
     transition: 0.3s;
     width: 1px;
 }
-.service_btn:hover:before{
+
+.service_btn:hover .service_arrow:before{
     border-top: 1px solid #333;
 }
-.service_btn:hover:after{
+
+.service_btn:hover .service_arrow:after{
     border-left: 1px solid #333;
 }
 
