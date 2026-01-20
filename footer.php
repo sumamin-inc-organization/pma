@@ -117,8 +117,7 @@
                                                     NEWS
                                                 </h4>
                                             </a>
-                                            <h4 class="contents__item--title is-mt20
-                                            is-icon">
+                                            <h4 class="contents__item--title is-mt20 is-icon">
                                                 COMPANY
                                             </h4>
                                             <div class="contents__itemBox js-accordion">
@@ -129,8 +128,7 @@
                                                     <p class="contents__item--inside">ビジョン・理念</p>
                                                 </a>
                                             </div>
-                                            <h4 class="contents__item--title is-mt20
-                                            is-icon">
+                                            <h4 class="contents__item--title is-mt20 is-icon">
                                                 RECRUIT
                                             </h4>
                                             <div class="contents__itemBox js-accordion">

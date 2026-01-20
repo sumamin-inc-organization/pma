@@ -55,7 +55,6 @@ p {
     line-height: 1.1;
     letter-spacing: 0.02rem;
 }
-
 .vision_content_title .title_sub {
     font-size: 16px;
     font-weight: 400;
@@ -94,7 +93,6 @@ p {
     flex-direction: column;
     gap: 30px;
 }
-
 .mission_content_item {
     display: flex;
     flex-direction: row;
@@ -241,9 +239,6 @@ p {
     .greeting_content {
         flex-direction: column;
         gap: 40px;
-    }
-
-    .greeting_text {
     }
 }
 

@@ -2,8 +2,13 @@
 <main id="service-contents" class="page_main">
     <section class="first_section">
         <div class="page_title_wrap">
+<<<<<<< HEAD
             <div class="page_title page_title_receive">
                 <h2 class="section_title">CONTENT</h2>
+=======
+            <div class="page_title">
+                <h2 class="page_title_main">CONTENT</h2>
+>>>>>>> origin/main
                 <p class="page_title_sub">コンテンツ制作事業</p>
             </div>
         </div>

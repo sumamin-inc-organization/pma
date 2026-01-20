@@ -90,6 +90,9 @@ function load_assets() {
 	if( is_page('sdgs-lp') ){
 		wp_enqueue_style( 'page.company_style', get_stylesheet_directory_uri().'/assets/css/page.sdgs-lp.css' );
 	}
+	if( is_single() ){
+		wp_enqueue_style( 'single_style', get_stylesheet_directory_uri().'/assets/css/single.css' );
+	}
 
 }
 add_action( 'wp_enqueue_scripts', 'load_assets' );
@@ -609,7 +612,7 @@ function cptui_register_my_taxes() {
 		"query_var" => true,
 		"rewrite" => [ 'slug' => 'l_cat', 'with_front' => true, ],
 		"show_admin_column" => true,
-		"show_in_rest" => false,
+		"show_in_rest" => true,
 		"show_tagcloud" => true,
 		"rest_base" => "l_cat",
 		"rest_controller_class" => "WP_REST_Terms_Controller",
@@ -642,7 +645,7 @@ function cptui_register_my_taxes() {
 		"query_var" => true,
 		"rewrite" => [ 'slug' => 'country', 'with_front' => true, ],
 		"show_admin_column" => true,
-		"show_in_rest" => false,
+		"show_in_rest" => true,
 		"show_tagcloud" => true,
 		"rest_base" => "country",
 		"rest_controller_class" => "WP_REST_Terms_Controller",
@@ -675,7 +678,7 @@ function cptui_register_my_taxes() {
 		"query_var" => true,
 		"rewrite" => [ 'slug' => 'detail', 'with_front' => true, ],
 		"show_admin_column" => true,
-		"show_in_rest" => false,
+		"show_in_rest" => true,
 		"show_tagcloud" => true,
 		"rest_base" => "detail",
 		"rest_controller_class" => "WP_REST_Terms_Controller",
@@ -708,7 +711,7 @@ function cptui_register_my_taxes() {
 		"query_var" => true,
 		"rewrite" => [ 'slug' => 'lanilani_cat', 'with_front' => true, ],
 		"show_admin_column" => true,
-		"show_in_rest" => false,
+		"show_in_rest" => true,
 		"show_tagcloud" => true,
 		"rest_base" => "lanilani_cat",
 		"rest_controller_class" => "WP_REST_Terms_Controller",
@@ -741,7 +744,7 @@ function cptui_register_my_taxes() {
 		"query_var" => true,
 		"rewrite" => [ 'slug' => 'history', 'with_front' => true, ],
 		"show_admin_column" => true,
-		"show_in_rest" => false,
+		"show_in_rest" => true,
 		"show_tagcloud" => true,
 		"rest_base" => "history",
 		"rest_controller_class" => "WP_REST_Terms_Controller",

@@ -118,7 +118,7 @@ summary::-webkit-details-marker {
 }
 
 /* -------------------------
-loaging
+loading
 ----------------------------*/
 /* ローディング画面のスタイル */
 #loading {
@@ -276,7 +276,6 @@ header
 	position: absolute;
 	display: block;
 	z-index: 9999;
-	webkit-transition: all 0.3s ease-in;
 	-moz-transition: all 0.3s ease-in;
 	-ms-transition: all 0.3s ease-in;
 	-o-transition: all 0.3s ease-in;

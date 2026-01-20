@@ -2,7 +2,11 @@
 <main id="service-editorial" class="page_main">
     <section id="editorialTitle" class="first_section">
         <div class="page_title_wrap">
+<<<<<<< HEAD
             <div class="page_title page_title_receive">
+=======
+            <div class="page_title">
+>>>>>>> origin/main
                 <h1 class="page_title_main">EDITORIAL</h1>
                 <p class="page_title_sub">編集プロダクション事業</p>
             </div>
@@ -38,7 +42,11 @@
         <section id="featureTitle">
             <div class="page_title_wrap">
                 <div class="page_title">
+<<<<<<< HEAD
                     <h2 class="section_title">FEATURE</h2>
+=======
+                    <h2 class="page_title_main">FEATURE</h2>
+>>>>>>> origin/main
                     <p class="page_title_sub">P.M.A.トライアングル７つの特徴</p>
                 </div>
             </div>

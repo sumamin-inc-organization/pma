@@ -2,8 +2,13 @@
 <main id="service-apparel" class="page_main">
     <section class="first_section">
         <div class="page_title_wrap">
+<<<<<<< HEAD
             <div class="page_title page_title_receive">
                 <h2 class="section_title">APPAREL</h2>
+=======
+            <div class="page_title">
+                <h2 class="page_title_main">APPAREL</h2>
+>>>>>>> origin/main
                 <p class="page_title_sub">アパレル事業</p>
             </div>
         </div>
@@ -28,9 +33,13 @@
             <div class="service_inner service_inner1">
                 <div class="service_img">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-apparel/apparel1.webp" alt="Lilly & Emma">
+<<<<<<< HEAD
                     <div class="service_movie">
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5eYWu53BN5s?si=JngLB2DYvwYpX6h0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
+=======
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-apparel/apparel2.webp" alt="Lilly & Emma">
+>>>>>>> origin/main
                 </div>
                 <div class="service_text">
                     <h3>オリジナルアイテムや<br>セレクトアイテムを販売</h3>
@@ -38,10 +47,14 @@
                         オシャレでエレガントな姉、リリーと、元気でキュートな妹、エマ。この「二人の姉妹のクローゼット」をコンセプトにしたセレクトショップをハワイ・ホノルルに展開しています。 同ブランドの「FEEL ALOHA」ロゴが入ったＴシャツは、SNSをきっかけに大ヒット。着ている姿を自撮りしてinstagramにアップするのがハワイでの流行となりました。<br><br>
                         そのほかにも、防水性・防汚性に優れた世界特許の特殊素材で作ったアイテムが話題を呼び、オリジナルのコラボグッズを数々の企業のノベルティとしてご活用いただいております。
                     </p>
+<<<<<<< HEAD
                     <a class="service_btn" href="https://lilly-and-emma.com/" target="_blank">
                         <span>Lilly & Emma 公式サイト</span>
                         <div class="service_arrow"></div>
                     </a>
+=======
+                    <a class="service_btn" href="https://lilly-and-emma.com/" target="_blank">Lilly & Emma 公式サイト</a>
+>>>>>>> origin/main
                 </div>
             </div>
             <div class="service_inner service_inner2">
@@ -64,10 +77,14 @@
                         ハワイの美しい自然や地球環境、関連企業およびスタッフ、労働環境などステークホルダーに対してサステナビリティな視点から配慮し、過剰な生産はいたしません。<br>
                         OEM展開やコラボレーションなども可能です。
                     </p>
+<<<<<<< HEAD
                     <a class="service_btn" href="<?php echo esc_url(home_url('/apparel-lp/')); ?>">
                         <span>快適多機能性素材について</span>
                         <div class="service_arrow"></div>
                     </a>
+=======
+                    <a class="service_btn" href="<?php echo esc_url(home_url('/apparel-lp/')); ?>">快適多機能性素材について</a>
+>>>>>>> origin/main
                 </div>
             </div>
         </div>
