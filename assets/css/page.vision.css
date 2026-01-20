@@ -1,0 +1,276 @@
+p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--fontNotosansjp);
+    line-height: 2;
+}
+
+#vision{
+    max-width: 100%;
+    padding: 0;
+    padding-bottom: 140px;
+}
+
+.vision_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.vision_inner > div:not(:first-child) {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vision_content{
+    display: grid;
+    grid-template-columns: 1fr 1200px 1fr;
+}
+
+.vision_content_inner {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6.61vw;
+}
+
+.vision_content_text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.vision_content_title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.vision_content_title .title_main {
+    font-size: 60px;
+    font-family: var(--fontCormorant);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02rem;
+}
+
+.vision_content_title .title_sub {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--fontNotosansjp);
+    line-height: 1.8;
+    padding-bottom: 5px;
+}
+
+.mission_content_inner, 
+.guideline_content_inner, 
+.meaning_content_inner {
+    display: flex;
+    flex-direction: row;
+    gap: 6.61vw;
+}
+
+.mission_content_inner,
+.meaning_content_inner {
+    flex-direction: row-reverse;
+}
+
+.mission_content_image{
+    flex: 1;
+}
+
+.mission_content_text {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 2.645vw;
+}
+
+.mission_content_list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mission_content_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.mission_content_item .num {
+    font-size: 60px;
+    font-weight: 400;
+    font-family: var(--fontCormorant);
+    line-height: 1.1;
+    letter-spacing: 0.02rem;
+    color: #D8D8D8;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+.guideline_content_list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.guideline_content_image{
+    flex: 1;
+}
+
+.guideline_content_text {
+    flex: 1.2;
+    padding-right: 2.645vw;
+}
+
+.meaning_content_text{
+    flex: 1.2;
+    padding-left: 2.645vw;
+}
+
+.meaning_content_image{
+    flex: 1;
+}
+
+.greeting_content {
+    display: flex;
+    flex-direction: row;
+    gap: 6.61vw;
+}
+
+.greeting_image {
+    flex: 1;
+}
+
+.greeting_text {
+    flex: 1.05;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-right: 2.645vw;
+}
+
+.greeting_sentence_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.greeting_sentence{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.greeting_author_wrap {
+    text-align: right;
+}
+
+.greeting_author{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    #vision{
+        padding-bottom: 100px;
+    }
+
+    .vision_inner {
+        gap: 80px;
+    }
+
+    .vision_inner > div:not(:first-child) {
+        padding: 0 30px;
+    }
+
+    .vision_content{
+        grid-template-columns: 30px 1fr 30px;
+    }
+
+    .vision_content_inner {
+        grid-column: 2;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .vision_content_text{
+        width: 100%;
+        padding: 0;
+    }
+
+    .vision_content_title {
+        gap: 24px;
+    }
+
+    .vision_content_title .title_main {
+        font-size: 46px;
+    }
+
+    .mission_content_inner, 
+    .guideline_content_inner, 
+    .meaning_content_inner {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .mission_content_text {
+        padding-left: 0;
+    }
+
+    .mission_content_list{
+        gap: 20px;
+    }
+
+    .mission_content_item{
+        gap: 20px;
+    }
+
+    .greeting_content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .greeting_text {
+    }
+}
+
+@media (max-width: 767px) {
+    #vision{
+        padding-bottom: 80px;
+    }
+
+    .vision_inner {
+        gap: 60px; 
+    }
+
+    .vision_inner > div:not(:first-child) {
+        padding: 0 20px;
+    }
+
+    .vision_content{
+        grid-template-columns: 20px 1fr 20px;
+    }
+
+    .vision_content_title {
+        flex-direction: column;
+        align-items: start;
+        gap: 8px;
+    }
+
+    .greeting_content{
+        gap: 20px;
+    }
+}

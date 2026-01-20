@@ -1,0 +1,64 @@
+#privacy_poricyTitle .page_title_sub {
+	text-wrap: nowrap;
+}
+.privacy_poricyMain_inner {
+	display: grid;
+	grid-template-columns: 0.508fr 0.425fr;
+	justify-content: space-between;
+	width: 100%;
+}
+.privacy_poricyMain_content_list {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.privacy_poricyMain_content_item {
+	font-size: 16px;
+	font-family: var(--fontNotosansjp);
+	line-height: 1.8;
+	font-weight: 400;
+	list-style: decimal;
+	margin-left: 20px;
+}
+.privacy_poricyMain_aside {
+	background-color: #f2f2f2;
+	padding: min(60px, 4.166vw) min(80px, 5.555vw);
+	position: sticky;
+	top: 130px;
+}
+.privacy_poricyMain_aside .aside_title {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.6;
+	font-family: var(--fontNotosansjp);
+}
+
+.privacy_poricyMain_aside * {
+	font-size: 16px;
+	line-height: 1.8;
+	color: var(--colorLightBlack);
+	font-family: var(--fontNotosansjp);
+}
+.privacy_poricyMain_aside .aside_email {
+	padding-top: 30px;
+}
+.privacy_poricyMain_aside .aside_text {
+	padding-top: 30px;
+}
+.aside_list_item {
+	list-style: disc;
+	margin-left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+	.privacy_poricyMain_inner {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
+	.privacy_poricyMain_aside {
+		background-color: #f2f2f2;
+		padding: 40px 20px;
+		position: static;
+		top: 0;
+	}
+}
