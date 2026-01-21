@@ -2,13 +2,8 @@
 <main id="service-apparel-en" class="page_main">
     <section class="first_section">
         <div class="page_title_wrap">
-<<<<<<< HEAD
             <div class="page_title page_title_receive">
-                <h2 class="section_title">APPAREL</h2>
-=======
-            <div class="page_title">
-                <h2 class="page_title_main">APPAREL</h2>
->>>>>>> origin/main
+                <h1 class="page_title_main">APPAREL</h1>
                 <p class="page_title_sub">アパレル事業</p>
             </div>
         </div>
@@ -46,14 +41,10 @@
                         The stylish and elegant older sister, Lily, and the energetic and cute younger sister, Emma. We operate a select shop in Honolulu, Hawaii, based on the concept of “the two sisters' closet.” The brand's T-shirts featuring the “FEEL ALOHA” logo became a huge hit thanks to social media. Taking selfies wearing them and posting them on Instagram became a trend in Hawaii.<br><br>
                         Additionally, items crafted from a world-patented special material with superior waterproof and stain-resistant properties have generated buzz. Our original collaboration goods are utilized as promotional items by numerous companies.
                     </p>
-<<<<<<< HEAD
                     <a class="service_btn" href="https://lilly-and-emma.com/" target="_blank">
                         <span>Lilly & Emma Official Website</span>
                         <div class="service_arrow"></div>
                     </a>
-=======
-                    <a class="service_btn" href="https://lilly-and-emma.com/" target="_blank">Lilly & Emma Official Website</a>
->>>>>>> origin/main
                 </div>
             </div>
             <div class="service_inner service_inner2">
@@ -76,14 +67,10 @@
                         We consider Hawaii's beautiful nature, the global environment, related companies and staff, working conditions, and other stakeholders from a sustainability perspective, and we do not engage in excessive production.<br>
                         OEM development and collaborations are also possible.
                     </p>
-<<<<<<< HEAD
                     <a class="service_btn" href="<?php echo esc_url(home_url('/apparel-lp/')); ?>">
                         <span>View more</span>
                         <div class="service_arrow"></div>
                     </a>
-=======
-                    <a class="service_btn" href="<?php echo esc_url(home_url('/apparel-lp/')); ?>">View more</a>
->>>>>>> origin/main
                 </div>
             </div>
         </div>

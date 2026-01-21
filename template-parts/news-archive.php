@@ -69,8 +69,8 @@ $query = new WP_Query($args);
                     <div class="news_aside">
                         <div class="news_aside_inner">
                             <div class="news_aside_search">
-                                <form method="get" action="<?php echo esc_url(get_permalink()); ?>" class="search-form">
-                                    <input type="text" name="s" value="<?php echo esc_attr($search_query); ?>" placeholder="検索" />
+                                <form method="get" action="<?php echo esc_url( home_url('/') ); ?>" class="search-form">
+                                    <input type="text" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" placeholder="検索"/>
                                     <button class="news_aside_search_btn" type="submit">
                                         <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9.07129 0.500488C13.8048 0.500619 17.6426 4.3382 17.6426 9.07178C17.6424 13.8052 13.8048 17.6429 9.07129 17.6431C4.33771 17.6431 0.50013 13.8053 0.5 9.07178C0.5 4.33812 4.33763 0.500488 9.07129 0.500488Z" stroke="#333333"/>

@@ -2,13 +2,8 @@
 <main id="service-consulting" class="page_main">
     <section class="first_section">
         <div class="page_title_wrap">
-<<<<<<< HEAD
             <div class="page_title page_title_receive">
-                <h2 class="section_title">CONSULTING</h2>
-=======
-            <div class="page_title">
-                <h2 class="page_title_main">CONSULTING</h2>
->>>>>>> origin/main
+                <h1 class="page_title_main">CONSULTING</h1>
                 <p class="page_title_sub">コンサルティング事業</p>
             </div>
         </div>

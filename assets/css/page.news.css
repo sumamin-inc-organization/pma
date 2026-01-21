@@ -48,7 +48,7 @@
 	width: fit-content;
 	max-width: 400px;
 }
-.news_aside_search input[name="search"] {
+.news_aside_search input[name="s"] {
 	width: 100%;
 	border-radius: 9999px;
 	border: 1px solid var(--colorLightBlack);

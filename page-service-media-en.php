@@ -3,7 +3,7 @@
     <section class="first_section">
         <div class="page_title_wrap">
             <div class="page_title page_title_receive">
-                <h2 class="section_title">MEDIA</h2>
+                <h1 class="page_title_main">MEDIA</h1>
                 <p class="page_title_sub">メディア事業（LaniLani）</p>
             </div>
         </div>

@@ -2,13 +2,8 @@
 <main id="service-sdgs" class="page_main">
     <section class="first_section">
         <div class="page_title_wrap">
-<<<<<<< HEAD
             <div class="page_title page_title_receive">
-                <h2 class="section_title">SDGs</h2>
-=======
-            <div class="page_title">
-                <h2 class="page_title_main">SDGs</h2>
->>>>>>> origin/main
+                <h1 class="page_title_main">SDGs</h1>
                 <p class="page_title_sub">SDGs推進事業</p>
             </div>
         </div>
@@ -42,14 +37,10 @@
                     <p>
                         地域のさまざまなごみ問題を解決する再資源化させる装置の導入を支援・推進しています。あらゆる廃棄物を分別することなく、本装置で処理し、肥料などの有価資源を生産します。その有価資源は、新たにその地域のエネルギーとなり循環。サステナブルな地域社会の構築に貢献いたします。
                     </p>
-<<<<<<< HEAD
                     <a class="service_btn" href="<?php echo esc_url(home_url('/sdgs-lp/')); ?>">
                         <span>詳細はこちら</span>
                         <div class="service_arrow"></div>
                     </a>
-=======
-                    <a class="service_btn" href="">詳細はこちら</a>
->>>>>>> origin/main
                 </div>
             </div>
         </div>

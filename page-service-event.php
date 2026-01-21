@@ -2,13 +2,8 @@
 <main id="service-event" class="page_main">
     <section class="first_section">
         <div class="page_title_wrap">
-<<<<<<< HEAD
             <div class="page_title page_title_receive">
-                <h2 class="section_title">EVENT</h2>
-=======
-            <div class="page_title">
-                <h2 class="page_title_main">EVENT</h2>
->>>>>>> origin/main
+                <h1 class="page_title_main">EVENT</h1>
                 <p class="page_title_sub">PR･イベント事業</p>
             </div>
         </div>
@@ -43,7 +38,6 @@
                         集客の足掛かりとして、またイベントを盛り上げるアイテムとして、ハワイ発人気ブランド「Lilly & Emma」を活用したオリジナル商品やノベルティ、また撥水性・防汚性に優れた革新的なファブリック素材を活用した商品など、オリジナリティの高い商品開発の企画提案が可能です。
                     </p>
                     <div class="service_link">
-<<<<<<< HEAD
                         <a class="service_btn" href="https://lilly-and-emma.com/" target="_blank">
                             <span>ハワイブランド「Lilly & Emma」</span>
                             <div class="service_arrow"></div>
@@ -52,10 +46,6 @@
                             <span>機能性ファブリックについて</span>
                             <div class="service_arrow"></div>
                         </a>
-=======
-                        <a class="service_btn" href="<?php echo esc_url(home_url('/apparel-lp/')); ?>">ハワイブランド「Lilly & Emma」</a>
-                        <a class="service_btn" href="">機能性ファブリックについて</a>
->>>>>>> origin/main
                     </div>
                 </div>
             </div>

@@ -69,7 +69,7 @@ function load_assets() {
 	if ( is_page( array( 'works-media', 'works-contents', 'works-event', 'works-consulting', 'works-apparel', 'works-ec', 'works-sdgs', 'works-food') ) ) {
 		wp_enqueue_style( 'works-common_style', get_stylesheet_directory_uri().'/assets/css/works/works-common.css' );
 	}
-	if ( is_page('news') || is_archive() ) {
+	if ( is_page('news') || is_archive() || is_search() ) {
 		wp_enqueue_style( 'page.news_style', get_stylesheet_directory_uri().'/assets/css/page.news.css' );
 	}
 	if( is_page('vision') ){

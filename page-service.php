@@ -1,11 +1,7 @@
 <?php get_header(); ?>
 <main id="service" class="page_main">
     <section class="first_section">
-<<<<<<< HEAD
         <div class="page_title_wrap center_line">
-=======
-        <div class="page_title_wrap">
->>>>>>> origin/main
             <div class="page_title">
                 <h1 class="page_title_main">SERVICES</h1>
                 <p class="page_title_sub">事業紹介</p>
@@ -72,11 +68,7 @@
         <div class="works_inner">
             <div class="page_title_wrap">
                 <div class="page_title">
-<<<<<<< HEAD
                     <h2 class="section_title">WORKS</h2>
-=======
-                    <h2 class="page_title_main">WORKS</h2>
->>>>>>> origin/main
                 </div>
                 <div class="pc">
                     <ul class="view__more">
