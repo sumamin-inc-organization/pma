@@ -2,15 +2,10 @@
 <main id="service-consulting" class="page_main">
     <section class="first_section">
         <div class="page_title_wrap">
-<<<<<<< HEAD
-            <div class="page_title page_title_receive">
-                <h2 class="section_title">CONSULTING</h2>
-=======
-            <div class="page_title">
-                <h2 class="page_title_main">CONSULTING</h2>
->>>>>>> origin/main
-                <p class="page_title_sub">コンサルティング事業</p>
-            </div>
+            <h1 class="page_title page_title_receive">
+                <span class="page_title_main">CONSULTING</span>
+                <span class="page_title_sub">コンサルティング事業</span>
+            </h1>
         </div>
         <div class="service_description">
             <p>貴社ビジネスの海外進出や現地に関する様々な要望をサポートいたします。</p>

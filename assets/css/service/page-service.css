@@ -45,6 +45,7 @@
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	gap: 20px;
 }
 .service_list_item_title_en {
 	font-size: 5.291vw;
@@ -58,7 +59,7 @@
 	font-family: var(--fontNotosansjp);
 	font-size: 1.455vw;
 	font-weight: 700;
-	line-height: 3;
+	line-height: 1;
 }
 
 .list1 {
@@ -116,6 +117,12 @@
 	background-image: url(../../img/service/food.webp);
 }
 
+@media screen and (max-width: 1024px) {
+	.service_list_item_title{
+		gap: 10px;
+	}
+}
+
 @media screen and (max-width: 767px) {
 	.service_list_inner {
 		margin: 0 calc(50% - 50vw); /* 画面幅いっぱいにはみ出させるためのネガティブマージン */
@@ -146,7 +153,7 @@
 	}
 	.service_list_item_title_ja {
 		font-size: 16px;
-		line-height: 2;
+		line-height: 1;
 	}
 }
 
@@ -154,33 +161,60 @@
 .works_posts {
 	margin-top: 60px;
 }
+
 .works_post_content {
 	color: var(--colorLightBlack);
 }
 
+.works_posts_list.swiper-wrapper{
+	height: auto;
+}
+
+.works_post_item a{
+	transition: 0.3s;
+}
+
+.works_post_item a:hover{
+	opacity: 0.6;
+}
+
+.works_post_thumb{
+	overflow: hidden;
+}
+
 .works_post_thumb img {
 	width: 100%;
+	aspect-ratio: 16 / 20;
+    object-fit: cover;
+	transition: 0.3s;
 }
+
+.works_post_item a:hover .works_post_thumb img {
+	scale: 1.1;
+}
+
 .works_post_date {
 	font-family: var(--fontRoboto);
 	font-size: 12px;
 }
+
 .works_post_title {
+	font-family: var(--fontNotosansjp);
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: 500;
 	line-height: 1.5;
 	display: -webkit-box;
-	-webkit-box-orient: vertical; /* 垂直方向に配置 */
-	overflow: hidden; /* 溢れた部分を隠す */
-	text-overflow: ellipsis; /* 溢れた部分に「...」を表示 */
-	-webkit-line-clamp: 2; /* 最大行数を2行に設定 */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 1;
 }
 
 @media screen and (min-width: 768px) {
 	.works_posts_list {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		gap: 3.968vw 2.645vw;
+		gap: 4.1vw 2.72vw;
 	}
 	.works_post_item {
 		display: grid;
@@ -189,7 +223,11 @@
 		display: grid;
 		grid-template-rows: subgrid;
 		grid-row: span 2;
-		gap: 10px;
+		gap: 20px;
+		transition: 0.3s;
+	}
+	.works_post_item a:hover{
+		opacity: 0.6;
 	}
 }
 
@@ -239,10 +277,17 @@
 	padding-left: 100px;
 	width: 100vw;
 }
+.sec__post--imgBox{
+	margin: 0!important;
+    height: auto!important;
+	overflow: hidden;
+}
 .sec__post--imgBox img {
 	width: 100%;
-	height: 100%;
+	height: auto!important;
+	aspect-ratio: 1 / 1;
 	object-fit: cover;
+	transition: 0.6s;
 }
 .sec__title {
 	font-size: var(--fontSize100);
@@ -304,15 +349,6 @@
 	width: 20.5vw;
 }
 
-.hawaiiInfo__date {
-	color: var(--colorLightBlack);
-	font-family: var(--fontRoboto);
-	font-size: var(--fontSize16);
-	font-weight: 400;
-	line-height: 1.88;
-	margin-top: 30px;
-}
-
 .hawaiiInfo .sec__post--text {
 	font-family: var(--fontNotosansjp);
 	margin-top: 20px;
@@ -333,18 +369,20 @@
 }
 .rss_item .title {
 	font-family: var(--fontNotosansjp);
-	margin-top: 20px;
-
 	font-family: var(--fontNotosansjp);
 	font-size: var(--fontSize22);
 	font-weight: bold;
 	line-height: 1.64;
-	margin-top: 30px;
+	margin-top: 10px;
 	display: block;
 }
 
 .rss_item .title a {
 	color: var(--colorLightBlack);
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .rss_item .rss_content {
@@ -370,6 +408,12 @@
 		height: 72px;
 		right: -340px;
 		width: 307px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.sec__post {
+		padding-left: 60px;
 	}
 }
 
@@ -401,11 +445,6 @@
 		height: 36px;
 		right: -110px;
 		width: 100px;
-	}
-
-	.hawaiiInfo__date {
-		font-size: 16px;
-		margin-top: 20px;
 	}
 
 	.feedzy-rss-1 {

@@ -2,14 +2,10 @@
 <main id="service-editorial" class="page_main">
     <section id="editorialTitle" class="first_section">
         <div class="page_title_wrap">
-<<<<<<< HEAD
-            <div class="page_title page_title_receive">
-=======
-            <div class="page_title">
->>>>>>> origin/main
-                <h1 class="page_title_main">EDITORIAL</h1>
-                <p class="page_title_sub">編集プロダクション事業</p>
-            </div>
+            <h1 class="page_title page_title_receive">
+                <span class="page_title_main">EDITORIAL</span>
+                <span class="page_title_sub">編集プロダクション事業</span>
+            </h1>
         </div>
         <div class="editorial_head">
             <div class="editorial_copy_wrap">
@@ -18,7 +14,7 @@
             <div class="editorial_description_wrap">
                 <p class="editorial_description">雑誌や書籍などの紙媒体をはじめ、PR誌やパンフレットなどの広告冊子、<br>WEBサイトやアプリなどのデジタルコンテンツの制作まで、ご予算と納期に合わせ、ご期待以上のプランを提示いたします。</p>
                 <div class="editorial_btn_wrap">
-                    <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="editorial_btn">
+                    <a href="<?php echo esc_url( get_permalink(get_page_by_path('contact')) ?>" class="editorial_btn">
                         <span>WORKS</span>
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" fill="var(--colorLightBlack)"/>
@@ -42,11 +38,7 @@
         <section id="featureTitle">
             <div class="page_title_wrap">
                 <div class="page_title">
-<<<<<<< HEAD
                     <h2 class="section_title">FEATURE</h2>
-=======
-                    <h2 class="page_title_main">FEATURE</h2>
->>>>>>> origin/main
                     <p class="page_title_sub">P.M.A.トライアングル７つの特徴</p>
                 </div>
             </div>
@@ -164,7 +156,7 @@
                     <h4 class="works_cta_title">WORKS</h4>
                     <p class="works_cta_description">これまでの制作実績はこちら</p>
                     <div class="works_cta_btn_wrap">
-                        <a href="<?php echo esc_url(home_url('/works/')); ?>" class="works_cta_btn">
+                        <a href="<?php echo esc_url( get_permalink(get_page_by_path('works')) ?>" class="works_cta_btn">
                             <span>VIEW ALL</span>
                             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" fill="var(--colorLightBlack)"/>
@@ -210,7 +202,7 @@
                 <h4 class="works_cta_title">WORKS</h4>
                 <p class="works_cta_description">これまでの制作実績はこちら</p>
                 <div class="works_cta_btn_wrap">
-                    <a href="<?php echo esc_url(home_url('/works/')); ?>" class="works_cta_btn">
+                    <a href="<?php echo esc_url( get_permalink(get_page_by_path('works')) ?>" class="works_cta_btn">
                         <span>VIEW ALL</span>
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" fill="var(--colorLightBlack)"/>
@@ -365,7 +357,7 @@
                         <div class="answer">
                             <span class="answer_mark">A</span>
                             <p class="answer_inner">
-                            編集プロダクション事業として30年の実績がございます。<br>直近の実績は、<a href="<?php echo esc_url(home_url('/works-editorial/')); ?>" class="answer_link">こちら</a>からご覧いただけます。 掲載していない実績もございますので、お気軽にお問い合わせくださいませ。
+                            編集プロダクション事業として30年の実績がございます。<br>直近の実績は、<a href="<?php echo esc_url( get_permalink(get_page_by_path('works-editorial')) ?>" class="answer_link">こちら</a>からご覧いただけます。 掲載していない実績もございますので、お気軽にお問い合わせくださいませ。
                             </p>
                         </div>
                     </details>
@@ -522,7 +514,7 @@
                         <input type="checkbox" id="privacy_policy" name="privacy_policy" value="1">
                         <label for="privacy_policy" class="form_checkbox_text">営業メールではありません。</label>
                     </div>
-                    <p class="form_checkbox_note">個人情報取り扱いについては、<a href="privacy-policy" target="_blank" rel="noopener noreferrer">個人情報保護方針</a>をご参照下さい。</p>
+                    <p class="form_checkbox_note">個人情報取り扱いについては、<a href="privacy-policy" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">個人情報保護方針</a>をご参照下さい。</p>
                 </div>
             </div>
 
