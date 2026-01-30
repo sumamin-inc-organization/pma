@@ -4,10 +4,10 @@
         <section id="achievementTitle" class="first_section">
             <div class="works_page_title_wrap">
                 <h2 class="works_page_title">WORKS</h2>
-                <div class="works_page_title_main">
-                    <h1 class="page_title_main">APPAREL</h1>
-                    <p class="page_title_sub">アパレル事業実績</p>
-                </div>
+                <h1 class="works_page_title_main">
+                    <span class="page_title_main">APPAREL</span>
+                    <span class="page_title_sub">アパレル事業実績</span>
+                </h1>
             </div>
             <div class="works_description">
                 <p>

@@ -2,10 +2,10 @@
 <main id="service-media" class="page_main">
     <section class="first_section">
         <div class="page_title_wrap">
-            <div class="page_title page_title_receive">
-                <h1 class="page_title_main">MEDIA</h1>
-                <p class="page_title_sub">メディア事業（LaniLani）</p>
-            </div>
+            <h1 class="page_title page_title_receive">
+                <span class="page_title_main">MEDIA</span>
+                <span class="page_title_sub">メディア事業（LaniLani）</span>
+            </h1>
         </div>
         <div class="language_switch_wrap">
             <?php
@@ -64,7 +64,7 @@
                     <p>
                         Each media outlet actively utilizes websites and social media. The digital expansion concept is “to experience the tropical paradise of Hawaii and a resort atmosphere anytime, even while in Japan.” Through updates featuring original columns by local writers and web-exclusive content, we provide the latest information from the destination. Furthermore, through partnerships with numerous major information media outlets, we can disseminate information not only to LaniLani users but also to a much broader audience.
                     </p>
-                    <a class="service_btn" href="https://www.lanilanihawaii.com/" target="_blank">
+                    <a class="service_btn" href="https://www.lanilanihawaii.com/" target="_blank" rel="noopener noreferrer">
                         <span>View more</span>
                         <div class="service_arrow"></div>
                     </a>
@@ -82,7 +82,7 @@
                     <p>
                         PREMIUM ARCADE delivers items and information for enjoying a premium lifestyle. We feature carefully selected items from Hawaii and other resorts, as well as premium items from across Japan, alongside the latest travel information.
                     </p>
-                    <a class="service_btn" href="https://pma-t.co.jp/premium-arcade/" target="_blank">
+                    <a class="service_btn" href="https://pma-t.co.jp/premium-arcade/" target="_blank" rel="noopener noreferrer">
                         <span>View more</span>
                         <div class="service_arrow"></div>
                     </a>
@@ -100,7 +100,7 @@
                     <p>
                         aristos is a new luxury magazine for affluent individuals pursuing a sophisticated lifestyle. It stands apart from conventional publications as an innovative media platform offering exceptional value and inspiration. Aristos is a one-of-a-kind entity delivering unique experiences to its readers. We provide exclusive information found nowhere else—access to extraordinary places typically inaccessible and rare items unavailable on the market.
                     </p>
-                    <a class="service_btn" href="https://aristos-media.com/" target="_blank">
+                    <a class="service_btn" href="https://aristos-media.com/" target="_blank" rel="noopener noreferrer">
                         <span>View more</span>
                         <div class="service_arrow"></div>
                     </a>

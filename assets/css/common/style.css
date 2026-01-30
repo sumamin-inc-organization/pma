@@ -2,36 +2,29 @@
 /* -------------------------
 common
 ----------------------------*/
-html,
-body {
-	scroll-behavior: smooth;
-}
 html {
 	scroll-padding-top: 73px;
 }
+
+
+
+html.lenis {
+  height: auto;
+}
+
+.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+
+
 .container {
 	margin: 0 auto;
 	max-width: 1200px;
-}
-html.lenis,
-html.lenis body {
-	height: auto;
-}
-
-.lenis.lenis-smooth {
-	scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-	overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-	overflow: hidden;
-}
-
-.lenis.lenis-smooth iframe {
-	pointer-events: none;
 }
 
 * {
@@ -959,4 +952,10 @@ bogo language switcher
 .bogo-language-switcher li a::before {
 	content: url(../../img/common/earth.svg);
 	margin-right: 6px;
+}
+
+@media screen and (max-width: 767px) {
+	.language_switch_wrap{
+		padding-top: 40px;
+	}
 }

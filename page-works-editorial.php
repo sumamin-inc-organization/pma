@@ -2,11 +2,12 @@
 <main id="achievement" class="page_main">
     <div class="achievement_inner">
         <section id="achievementTitle" class="first_section">
-            <div class="page_title_wrap">
-                <div class="page_title">
-                    <h1 class="page_title_main"><span class="page_title_main--small">WORKS</span><br>EDITORIAL</h1>
-                    <p class="page_title_sub">編集プロダクション事業実績</p>
-                </div>
+            <div class="works_page_title_wrap">
+                <h2 class="works_page_title">WORKS</h2>
+                <h1 class="works_page_title_main">
+                    <span class="page_title_main">EDITORIAL</span>
+                    <span class="page_title_sub">編集プロダクション事業実績</span>
+                </h1>
             </div>
             <div class="deco__bg">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/about/top-about_bg.png" alt="背景画像" id="js-rotate">

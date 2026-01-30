@@ -2,10 +2,10 @@
 <main id="service-food" class="page_main">
     <section class="first_section">
         <div class="page_title_wrap">
-            <div class="page_title page_title_receive">
-                <h1 class="page_title_main">FOOD&<br>BEVERAGE</h1>
-                <p class="page_title_sub">飲食事業</p>
-            </div>
+            <h1 class="page_title page_title_receive">
+                <span class="page_title_main">FOOD&<br>BEVERAGE</span>
+                <span class="page_title_sub">飲食事業</span>
+            </h1>
         </div>
         <div class="service_description">
             <p>日本初のバニラスイーツ専門店『東京バニラファクトリー』を運営。</p>
@@ -29,7 +29,7 @@
                     <p>
                     浅草本店・渋谷マルイ店、都内２店舗で展開する日本初のバニラスイーツ専門店「東京バニラファクトリー」。弊社で最も新しい事業として力を入れており、日本テレビ『ヒルナンデス！』『ゼロイチ』と、人気番組でも紹介されるなど話題となっております。<br><br>前述のテレビ放送時には通販サイトにて、番組限定のセット商品を販売。催事イベントに出店するなど、通常の店舗販売だけでなく積極的に存在をアピールし、ブランドを周知。短期出店、イベント販売、コラボ企画など随時受け付けております。
                     </p>
-                    <a class="service_btn" href="https://www.tokyovanilla-factory.com/" target="_blank">
+                    <a class="service_btn" href="https://www.tokyovanilla-factory.com/" target="_blank" rel="noopener noreferrer">
                         <span>東京バニラファクトリー 公式サイト</span>
                         <div class="service_arrow"></div>
                     </a>

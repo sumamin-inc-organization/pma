@@ -141,6 +141,7 @@ p {
     display: flex;
     flex-direction: row;
     gap: 6.61vw;
+    margin-top: 60px;
 }
 
 .greeting_image {
@@ -266,6 +267,7 @@ p {
     }
 
     .greeting_content{
+        margin-top: 40px;
         gap: 20px;
     }
 }

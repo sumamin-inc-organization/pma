@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.querySelector('.headerMenu').addEventListener('click', function() {
-			console.log('click');
         document.body.classList.add('stop');
 			document.querySelector('.header__menu').classList.add('open');
     });

@@ -2,10 +2,10 @@
 <main id="service-apparel-en" class="page_main">
     <section class="first_section">
         <div class="page_title_wrap">
-            <div class="page_title page_title_receive">
-                <h1 class="page_title_main">APPAREL</h1>
-                <p class="page_title_sub">アパレル事業</p>
-            </div>
+            <h1 class="page_title page_title_receive">
+                <span class="page_title_main">APPAREL</span>
+                <span class="page_title_sub">アパレル事業</span>
+            </h1>
         </div>
         <div class="language_switch_wrap">
             <?php
@@ -41,7 +41,7 @@
                         The stylish and elegant older sister, Lily, and the energetic and cute younger sister, Emma. We operate a select shop in Honolulu, Hawaii, based on the concept of “the two sisters' closet.” The brand's T-shirts featuring the “FEEL ALOHA” logo became a huge hit thanks to social media. Taking selfies wearing them and posting them on Instagram became a trend in Hawaii.<br><br>
                         Additionally, items crafted from a world-patented special material with superior waterproof and stain-resistant properties have generated buzz. Our original collaboration goods are utilized as promotional items by numerous companies.
                     </p>
-                    <a class="service_btn" href="https://lilly-and-emma.com/" target="_blank">
+                    <a class="service_btn" href="https://lilly-and-emma.com/" target="_blank" rel="noopener noreferrer">
                         <span>Lilly & Emma Official Website</span>
                         <div class="service_arrow"></div>
                     </a>
@@ -67,7 +67,7 @@
                         We consider Hawaii's beautiful nature, the global environment, related companies and staff, working conditions, and other stakeholders from a sustainability perspective, and we do not engage in excessive production.<br>
                         OEM development and collaborations are also possible.
                     </p>
-                    <a class="service_btn" href="<?php echo esc_url(home_url('/apparel-lp/')); ?>">
+                    <a class="service_btn" href="<?php echo esc_url( get_permalink(get_page_by_path('apparel-lp')) ?>">
                         <span>View more</span>
                         <div class="service_arrow"></div>
                     </a>

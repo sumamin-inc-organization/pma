@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main id="sdgs_lp">
-    <div class="sdgs_lp_hero page_inner">
+    <div class="sdgs_lp_hero">
         <div class="hero_left">
             <p>貴社のごみ処理問題＆コストを一気に解決！</p>
             <h1>

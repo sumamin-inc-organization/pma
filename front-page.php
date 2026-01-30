@@ -1,18 +1,18 @@
 <?php get_header(); ?>
-<!-- kv start -->
-<div class="kv">
-    <video class="kv__movie" autoplay playsinline loop preload="auto" width="100%" height="100%" muted>
-        <source class="videoSource" src="<?php echo get_template_directory_uri(); ?>/assets/video/movie.mp4" type="video/mp4">
-    </video>
-
-    <h1 class="kv__title">P.M.A.<br class="sp">Tryangle,inc</h1>
-    <p class="kv__scroll">SCROLL</p>
-    <span class="kv__scrollbar--white"></span>
-    <span class="kv__scrollbar--black"></span>
-</div>
-<!-- kv end -->
 <!-- main start -->
 <main class="main" data-speed-y="-3">
+    <!-- kv start -->
+    <div class="kv">
+        <video class="kv__movie" autoplay playsinline loop preload="auto" width="100%" height="100%" muted>
+            <source class="videoSource" src="<?php echo get_template_directory_uri(); ?>/assets/video/movie.mp4" type="video/mp4">
+        </video>
+    
+        <h1 class="kv__title">P.M.A.<br class="sp">Tryangle,inc</h1>
+        <p class="kv__scroll">SCROLL</p>
+        <span class="kv__scrollbar--white"></span>
+        <span class="kv__scrollbar--black"></span>
+    </div>
+    <!-- kv end -->
     <!-- about start -->
     <section class="about">
         <div class="container">
@@ -53,7 +53,7 @@
                 $args = array(
                     'post_type' => 'post',
                     'posts_per_page' => 5,//表示させたい投稿の数
-                    'category_name' => 'WORKS',
+                    'category_name' => 'works',
             );
             $query = new WP_Query($args);
             ?>
@@ -62,34 +62,31 @@
                     <ul class="sec__post--wrap swiper-wrapper">
                     <?php									
                     if ($query->have_posts()) :
-                        while ($query->have_posts()) : $query->the_post();
-                            // タイトルを取得
-                            $title = get_the_title();
-                            // 本文を取得
-                            $content = get_the_content();
-                            // 本文を取得（全文）
-                            $content_excerpt = get_the_content();
-                            // アイキャッチ画像を取得
-                            if (has_post_thumbnail()) {
-                                $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
-                            } else {
-                                $thumbnail_url = 'アイキャッチ画像が設定されていません';
-                            }
-                                // 投稿のURLを取得
-                            $post_url = get_permalink();
+                    while ($query->have_posts()) : $query->the_post();
+                    // タイトルを取得
+                    $title = get_the_title();
+                    $content_excerpt = wp_trim_words( get_the_content(), 150, '…' );
+                    // アイキャッチ画像を取得
+                    if (has_post_thumbnail()) {
+                        $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
+                    } else {
+                        $thumbnail_url = 'アイキャッチ画像が設定されていません';
+                    }
+                        // 投稿のURLを取得
+                    $post_url = get_permalink();
                     ?>
                         <li class="sec__post--item swiper-slide">
                             <a href="<?php echo esc_url($post_url); ?>" class="is-hover">
                                 <div class="sec__post--imgBox">
-                                <?php if ($thumbnail_url !== 'アイキャッチ画像が設定されていません') : ?>
-                                    <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php echo esc_attr($title); ?>" class="sec__post--img works__post--img">
-                                <?php else : ?>
-                                    <p><?php echo esc_html($thumbnail_url); ?></p>
-                                <?php endif; ?>
-                                </div>
-                                <p class="sec__post--text"><?php echo esc_html($title); ?></p>
-                                <div class="sec__post--sentence">
-                                <?php echo wp_kses_post($content_excerpt); ?>
+                                    <?php if ($thumbnail_url !== 'アイキャッチ画像が設定されていません') : ?>
+                                        <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php echo esc_attr($title); ?>" class="sec__post--img works__post--img">
+                                    <?php else : ?>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/works/thumbnail.jpg" alt="No Image" class="sec__post--img works__post--img">
+                                    <?php endif; ?>
+                                    </div>
+                                    <p class="sec__post--text"><?php echo esc_html($title); ?></p>
+                                    <div class="sec__post--sentence">
+                                    <?php echo wp_kses_post($content_excerpt); ?>
                                 </div>
                             </a>
                         </li>
@@ -116,73 +113,65 @@
             <div class="servicesNav__inner">
                 <ul class="servicesNavList">
                     <li class="servicesNavList--item">
-                        <a href="media-b/">
-                            <div class="servicesNavList__imgBox"><img
-                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/top/services/img-services1.jpg" alt=""
-                                    class="servicesNavList__img">
+                        <a href="<?php echo esc_url( get_permalink( get_page_by_path('service/service-media'))); ?>">
+                            <div class="servicesNavList__imgBox">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/services/img-services1.jpg" alt="自社メディア事業" class="servicesNavList__img">
                                 <h3 class="servicesNavList--title">MEDIA</h3>
                                 <p class="servicesNavList--ja">自社メディア事業</p>
                             </div>
                         </a>
                     </li>
                     <li class="servicesNavList--item">
-                        <a href="editorial/">
-                            <div class="servicesNavList__imgBox"><img
-                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/top/services/img-services2.jpg" alt=""
-                                    class="servicesNavList__img">
+                        <a href="<?php echo esc_url( get_permalink( get_page_by_path('service/service-editorial'))); ?>">
+                            <div class="servicesNavList__imgBox">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/services/img-services2.jpg" alt="編集プロダクション事業" class="servicesNavList__img">
                                 <h3 class="servicesNavList--title">EDITORIAL</h3>
                                 <p class="servicesNavList--ja">編集プロダクション事業</p>
                             </div>
                         </a>
                     </li>
                     <li class="servicesNavList--item">
-                        <a href="contents/">
-                            <div class="servicesNavList__imgBox"><img
-                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/top/services/img-services3.jpg" alt=""
-                                    class="servicesNavList__img">
+                        <a href="<?php echo esc_url( get_permalink( get_page_by_path('service/service-contents'))); ?>">
+                            <div class="servicesNavList__imgBox">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/services/img-services3.jpg" alt="コンテンツ制作事業" class="servicesNavList__img">
                                 <h3 class="servicesNavList--title">CONTENT</h3>
                                 <p class="servicesNavList--ja">コンテンツ制作事業</p>
                             </div>
                         </a>
                     </li>
                     <li class="servicesNavList--item">
-                        <a href="apparel/">
-                            <div class="servicesNavList__imgBox"><img
-                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/top/services/img-services4.jpg" alt=""
-                                    class="servicesNavList__img">
+                        <a href="<?php echo esc_url( get_permalink( get_page_by_path('service/service-apparel'))); ?>">
+                            <div class="servicesNavList__imgBox">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/services/img-services4.jpg" alt="アパレル事業" class="servicesNavList__img">
                                 <h3 class="servicesNavList--title">APPAREL</h3>
                                 <p class="servicesNavList--ja">アパレル事業</p>
+                            </div>
                         </a>
                     </li>
                 </ul>
                 <ul class="servicesNavList">
                     <li class="servicesNavList--item">
-                        <a href="pr-events/">
-                            <div class="servicesNavList__imgBox"><img
-                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/top/services/img-services5.jpg" alt=""
-                                    class="servicesNavList__img">
+                        <a href="<?php echo esc_url( get_permalink( get_page_by_path('service/service-event'))); ?>">
+                            <div class="servicesNavList__imgBox">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/services/img-services5.jpg" alt="PR・イベント事業" class="servicesNavList__img">
                                 <h3 class="servicesNavList--title">EVENT</h3>
                                 <p class="servicesNavList--ja">PR・イベント事業</p>
                             </div>
                         </a>
                     </li>
                     <li class="servicesNavList--item">
-                        <a href="eating/">
-                            <div class="servicesNavList__imgBox"><img
-                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/top/services/img-services6.jpg" alt=""
-                                    class="servicesNavList__img">
-                                <h3 class="servicesNavList--title">FOOD<span
-                                        class="is-small35">&</span>BEVERAGE
-                                </h3>
+                        <a href="<?php echo esc_url( get_permalink( get_page_by_path('service/service-food'))); ?>">
+                            <div class="servicesNavList__imgBox">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/services/img-services6.jpg" alt="飲食事業" class="servicesNavList__img">
+                                <h3 class="servicesNavList--title">FOOD<span class="is-small35">&</span>BEVERAGE</h3>
                                 <p class="servicesNavList--ja">飲食事業</p>
                             </div>
                         </a>
                     </li>
                     <li class="servicesNavList--item">
-                        <a href="sdgs/">
-                            <div class="servicesNavList__imgBox"><img
-                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/top/services/img-services7.jpg" alt=""
-                                    class="servicesNavList__img">
+                        <a href="<?php echo esc_url( get_permalink( get_page_by_path('service/service-sdgs'))); ?>">
+                            <div class="servicesNavList__imgBox">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/services/img-services7.jpg" alt="SDGs推進事業" class="servicesNavList__img">
                                 <h3 class="servicesNavList--title">SDGs</h3>
                                 <p class="servicesNavList--ja">SDGs推進事業</p>
                             </div>
@@ -201,23 +190,20 @@
                 <div class="sec__title--border"><span class="js-border"></span></div>
             </div>
             <div class="ecNav__inner">
-                <a href="premium-arcade/">
+                <a href="<?php echo esc_url( get_permalink( get_page_by_path('premium-arcade'))); ?>">
                     <div class="ecNav__imgBox">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/ec/img-ec_top.jpg" alt="" class="ecNav__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/ec/img-ec_top.jpg" alt="PREMIUMARCADE" class="ecNav__img">
                     </div>
                     <div class="ecNav__sec--wrap">
                         <h3 class="ecNav__sec--title">PREMIUMARCADE</h3>
-                        <p class="ecNav__sec--text">
-                            プレミアムライフを満喫できるアイテムや情報をお届け
-                        </p>
+                        <p class="ecNav__sec--text">プレミアムライフを満喫できるアイテムや情報をお届け</p>
                     </div>
                 </a>
                 <ul class="ecNav__contents--wrap">
                     <li class="ecNav__contents--item">
-                        <a href="https://lanilanimarket.com/" target="_blank">
+                        <a href="https://lanilanimarket.com/" target="_blank" rel="noopener noreferrer">
                             <div class="ecNav__contents--imgBox">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/ec/img-ec_content1.jpg" alt=""
-                                    class="ecNav__contents--img ecNav__img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/ec/img-ec_content1.jpg" alt="LaniLani market" class="ecNav__contents--img ecNav__img">
                             </div>
                             <div class="ecNav__sec--wrap">
                                 <h4 class="ecNav__contents--title">LaniLani market</h4>
@@ -226,10 +212,9 @@
                         </a>
                     </li>
                     <li class="ecNav__contents--item">
-                        <a href="https://lilly-and-emma.com/" target="_blank">
+                        <a href="https://lilly-and-emma.com/" target="_blank" rel="noopener noreferrer">
                             <div class="ecNav__contents--imgBox">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/ec/img-ec_content2.jpg" alt=""
-                                    class="ecNav__contents--img ecNav__img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/ec/img-ec_content2.jpg" alt="Lilly & Emma" class="ecNav__contents--img ecNav__img">
                             </div>
                             <div class="ecNav__sec--wrap">
                                 <h4 class="ecNav__contents--title">Lilly & Emma</h4>
@@ -238,10 +223,9 @@
                         </a>
                     </li>
                     <li class="ecNav__contents--item">
-                        <a href="https://www.tokyovanilla-factory.com/" target="_blank">
+                        <a href="https://www.tokyovanilla-factory.com/" target="_blank" rel="noopener noreferrer">
                             <div class="ecNav__contents--imgBox">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/ec/img-ec_content3.jpg" alt=""
-                                    class="ecNav__contents--img ecNav__img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/ec/img-ec_content3.jpg" alt="Tokyo vanilla factory" class="ecNav__contents--img ecNav__img">
                             </div>
                             <div class="ecNav__sec--wrap">
                                 <h4 class="ecNav__contents--title">Tokyo vanilla factory</h4>
@@ -250,10 +234,9 @@
                         </a>
                     </li>
                     <li class="ecNav__contents--item">
-                        <a href="https://pensiero.stores.jp/" target="_blank">
+                        <a href="https://pensiero.stores.jp/" target="_blank" rel="noopener noreferrer">
                             <div class="ecNav__contents--imgBox">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/ec/img-ec_content4.jpg" alt=""
-                                    class="ecNav__contents--img ecNav__img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/ec/img-ec_content4.jpg" alt="Pensiero" class="ecNav__contents--img ecNav__img">
                             </div>
                             <div class="ecNav__sec--wrap">
                                 <h4 class="ecNav__contents--title">Pensiero</h4>
@@ -271,9 +254,9 @@
         <div class="container">
             <div class="sec__top">
                 <div class="sec__titleBox">
-                    <h2 class="sec__title fadeIn js-fadeIn"><span
-                            class="hawaii__title--logo">HAWAII</span><br>
-                        INFORMATION</h2>
+                    <h2 class="sec__title fadeIn js-fadeIn">
+                        <span class="hawaii__title--logo">HAWAII</span><br>INFORMATION
+                    </h2>
                     <div class="sec__title--border"><span class="js-border"></span></div>
                 </div>
                 <div class="for-pc">
@@ -284,9 +267,7 @@
                 </div>
             </div>
             <div class="sec__post">
-            <?php
-                echo do_shortcode('[feedzy-rss feeds=https://www.lanilanihawaii.com/feed max="6" offset="0" feed_title="yes" refresh="1_hours" lazy="no" disable_default_style="yes" classname="swiper" dryrun="yes" target="_blank" meta="date" summary="no" size="400" http="https"]');
-            ?>
+                <?php echo do_shortcode('[feedzy-rss feeds=https://www.lanilanihawaii.com/feed max="6" offset="0" feed_title="yes" refresh="1_hours" lazy="no" disable_default_style="yes" classname="swiper" dryrun="yes" target="_blank" rel="noopener noreferrer" meta="date" summary="no" size="400" http="https"]'); ?>
             </div>
         </div>
     </section>
@@ -294,11 +275,11 @@
     <!-- news start -->
     <?php
     $args = array(
-        'post_type' => 'post',
-        'posts_per_page' => 5,//表示させたい投稿の数
-        'category__not_in' => 2,
+        'post_type'        => 'post',
+        'posts_per_page'   => 5,
+        'category__not_in' => array( get_cat_ID('RSSフィード_LaniLani') ),
     );
-    $the_query = new WP_Query($args);
+    $the_query = new WP_Query( $args );
     ?>  
     <section class="news">
         <div class="container">
@@ -312,17 +293,17 @@
                     <?php if($the_query->have_posts()):
                         while($the_query->have_posts()):
                         $the_query->the_post();     
-                        $terms = get_the_terms($post->ID, 'detail');
                         $category = get_the_category(); 
                     ?>
-                        
                         <li class="newsList__item">
                             <div class="newsList__item--column">
                                 <p class="newsList__item--date"><?php the_time('Y.m.d');?></p>
                                 <p class="newsList__item--label">
-                                <?php   if ( $category[0] ) {
-                                    echo '<a href="' . get_category_link( $category[0]->term_id ) . '">' . $category[0]->cat_name . '</a>';
-                                    } ?>
+                                <?php   if ( ! empty($category) ) {
+                                    echo '<a href="' . esc_url( get_category_link( $category[0]->term_id ) ) . '">'
+                                        . esc_html( $category[0]->cat_name )
+                                        . '</a>';
+                                } ?>
                                 </p>
                             </div>
                             <p class="newsList__item--text"><a href="<?php the_permalink(); ?>"><?php the_title() ;?></a></p>
@@ -334,16 +315,12 @@
                     </ul>
                 </div>
             </div>
-            <ul class="newsList__more">
-                <a href="news/">
-                    <li class="newsList__more--btn">
-                        <p class="newsList__more--text">VIEW ALL</p>
-                    </li>
-                </a>
-                <a href="news/">
-                    <li class="slideBtn__right"></li>
-                </a>
-            </ul>
+            <a href="<?php echo esc_url( get_permalink(get_page_by_path('news'))) ?>" class="newsList__more">
+                <div class="newsList__more--btn">
+                    <p class="newsList__more--text">VIEW ALL</p>
+                </div>
+                <div class="slideBtn__right"></div>
+            </a>
         </div>
     </section>
     <!-- news end -->

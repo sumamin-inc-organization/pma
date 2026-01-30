@@ -2,10 +2,10 @@
 <main id="service-sdgs" class="page_main">
     <section class="first_section">
         <div class="page_title_wrap">
-            <div class="page_title page_title_receive">
-                <h1 class="page_title_main">SDGs</h1>
-                <p class="page_title_sub">SDGs推進事業</p>
-            </div>
+            <h1 class="page_title page_title_receive">
+                <span class="page_title_main">SDGs</span>
+                <span class="page_title_sub">SDGs推進事業</span>
+            </h1>
         </div>
         <div class="service_description">
             <p>日本からハワイのSDGsの普及、啓発、達成にチャレンジする取り組みを実施。</p>
@@ -37,7 +37,7 @@
                     <p>
                         地域のさまざまなごみ問題を解決する再資源化させる装置の導入を支援・推進しています。あらゆる廃棄物を分別することなく、本装置で処理し、肥料などの有価資源を生産します。その有価資源は、新たにその地域のエネルギーとなり循環。サステナブルな地域社会の構築に貢献いたします。
                     </p>
-                    <a class="service_btn" href="<?php echo esc_url(home_url('/sdgs-lp/')); ?>">
+                    <a class="service_btn" href="<?php echo esc_url( get_permalink(get_page_by_path('sdgs-lp')) ?>">
                         <span>詳細はこちら</span>
                         <div class="service_arrow"></div>
                     </a>

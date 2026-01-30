@@ -2,10 +2,10 @@
 <main id="service" class="page_main">
     <section class="first_section">
         <div class="page_title_wrap center_line">
-            <div class="page_title">
-                <h1 class="page_title_main">SERVICES</h1>
-                <p class="page_title_sub">事業紹介</p>
-            </div>
+            <h1 class="page_title">
+                <span class="page_title_main">SERVICES</span>
+                <span class="page_title_sub">事業紹介</span>
+            </h1>
         </div>
         <div class="service_description">
             <p>国内・海外の情報誌やムック、企業PR誌、WEB媒体など、年間100冊以上を制作する編集プロダクション事業を主軸に、<br class="pc">
@@ -14,7 +14,7 @@
         <div class="service_list">
             <ul class="service_list_inner">
                 <li class="service_list_item list1">
-                    <a href="<?php echo home_url('/service-editorial/'); ?>" class>
+                    <a href="<?php echo home_url('/service-editorial/'); ?>">
                         <h3 class="service_list_item_title"><span class="service_list_item_title_en">EDITORIAL</span><span class="service_list_item_title_ja">編集プロダクション事業</span></h3>
                     </a>
                 </li>
@@ -110,7 +110,6 @@
                                     </div>
                                 <?php endif; ?>
                                 <div class="works_post_content">
-                                    <span class="works_post_date"><?php echo get_the_date('y.m.d'); ?></span>
                                     <h3 class="works_post_title"><?php the_title(); ?></h3>
                                 </div>
                             </a>
@@ -155,7 +154,7 @@
             </div>
             <div class="sec__post">
             <?php
-                echo do_shortcode('[feedzy-rss feeds=https://www.lanilanihawaii.com/feed max="6" offset="0" feed_title="yes" refresh="1_hours" lazy="no" disable_default_style="yes" classname="swiper" dryrun="yes" target="_blank" meta="date" summary="no" size="400" http="https"]');
+                echo do_shortcode('[feedzy-rss feeds=https://www.lanilanihawaii.com/feed max="6" offset="0" feed_title="yes" refresh="1_hours" lazy="no" disable_default_style="yes" classname="swiper" dryrun="yes" target="_blank" rel="noopener noreferrer" meta="date" summary="no" size="400" http="https"]');
             ?>
             </div>
         </div>

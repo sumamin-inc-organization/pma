@@ -2,10 +2,10 @@
 <main id="service-ec" class="page_main">
     <section class="first_section">
         <div class="page_title_wrap">
-            <div class="page_title page_title_receive">
-                <h1 class="page_title_main">EC</h1>
-                <p class="page_title_sub">EC事業</p>
-            </div>
+            <h1 class="page_title page_title_receive">
+                <span class="page_title_main">EC</span>
+                <span class="page_title_sub">EC事業</span>
+            </h1>
         </div>
         <div class="language_switch_wrap">
             <a href="<?php echo home_url( '/' . get_post_field( 'post_name', get_queried_object_id() ) . '-en' ); ?>" class="language_switch">
@@ -36,15 +36,15 @@
                         ハワイを応援するオンラインセレクトショップ「LaniLani market」やハワイのセレクトアパレルショップ「Lilly＆Emma」、バニラビーンズスイーツの専門店「東京バニラファクトリー」の通販サイトなど、さまざまなECサイトを企画・運営しています。
                     </p>
                     <div class="service_link">
-                        <a class="service_btn" href="https://lanilanimarket.com/" target="_blank">
+                        <a class="service_btn" href="https://lanilanimarket.com/" target="_blank" rel="noopener noreferrer">
                             <span>LaniLani market</span>
                             <div class="service_arrow"></div>
                         </a>
-                        <a class="service_btn" href="https://lilly-and-emma.com/" target="_blank">
+                        <a class="service_btn" href="https://lilly-and-emma.com/" target="_blank" rel="noopener noreferrer">
                             <span>Lilly＆Emma</span>
                             <div class="service_arrow"></div>
                         </a>
-                        <a class="service_btn" href="https://www.tokyovanilla-factory.com/" target="_blank">
+                        <a class="service_btn" href="https://www.tokyovanilla-factory.com/" target="_blank" rel="noopener noreferrer">
                             <span>東京バニラファクトリー</span>
                             <div class="service_arrow"></div>
                         </a>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main id="apparel_lp">
-    <div class="apparel_lp_hero page_inner">
+    <div class="apparel_lp_hero">
         <div class="hero_left">
             <h1>
                 ウェルビーイングな<br>ライフスタイル提案を<br>サポートします！
@@ -98,7 +98,7 @@
                 </div>
                 <div class="function_pt">
                     <div class="function_pt_left">
-                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/apparel_lp/point.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/apparel_lp/point.png" alt="">
                     </div>
                     <div class="function_pt_center">
                         <p>

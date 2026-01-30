@@ -2,10 +2,10 @@
 <main id="service-media" class="page_main">
     <section class="first_section">
         <div class="page_title_wrap">
-            <div class="page_title page_title_receive">
-                <h1 class="page_title_main">MEDIA</h1>
-                <p class="page_title_sub">メディア事業（LaniLani）</p>
-            </div>
+            <h1 class="page_title page_title_receive">
+                <span class="page_title_main">MEDIA</span>
+                <span class="page_title_sub">メディア事業（LaniLani）</span>
+            </h1>
         </div>
         <div class="language_switch_wrap">
             <a href="<?php echo home_url( '/' . get_post_field( 'post_name', get_queried_object_id() ) . '-en' ); ?>" class="language_switch">
@@ -59,7 +59,7 @@
                     <p>
                         各メディアでは、ウェブサイトやSNSも積極的に展開しています。デジタル展開のコンセプトは、「日本にいながらいつでも南国ハワイやリゾート気分を味わえる」こと。現地在住ライターによるオリジナルコラムやウェブ限定コンテンツの更新を通じて、現地の最新情報を提供しています。また、数々の大手情報メディアとの連携により、LaniLaniユーザーだけでなく、より広範な情報拡散が可能です。
                     </p>
-                    <a class="service_btn" href="https://www.lanilanihawaii.com/" target="_blank">
+                    <a class="service_btn" href="https://www.lanilanihawaii.com/" target="_blank" rel="noopener noreferrer">
                         <span>ウェブサイトはこちら</span>
                         <div class="service_arrow"></div>
                     </a>
@@ -77,7 +77,7 @@
                     <p>
                         プレミアムライフを満喫できるアイテムや情報をお届けする「PREMIUM ARCADE」。ハワイをはじめとするリゾートや日本各地の厳選お取り寄せアイテム、最新観光情報を展開しています。
                     </p>
-                    <a class="service_btn" href="https://pma-t.co.jp/premium-arcade/" target="_blank">
+                    <a class="service_btn" href="https://pma-t.co.jp/premium-arcade/" target="_blank" rel="noopener noreferrer">
                         <span>ウェブサイトはこちら</span>
                         <div class="service_arrow"></div>
                     </a>
@@ -95,7 +95,7 @@
                     <p>
                         贅沢で洗練されたライフスタイルを追求する富裕層に向けた、新しいラグジュアリーマガジン「aristos（アリストス）」。従来の情報誌とは一線を画し、特別な価値とインスピレーションを提供する革新的なメディアプラットフォームです。「aristos」は、読者に“オンリーワン”の体験を届ける唯一無二の存在。通常では訪れることができない特別な場所や、市場には出回らない希少なアイテムなど、ここでしか得られない特別な情報をお届けします。
                     </p>
-                    <a class="service_btn" href="https://aristos-media.com/" target="_blank">
+                    <a class="service_btn" href="https://aristos-media.com/" target="_blank" rel="noopener noreferrer">
                         <span>ウェブサイトはこちら</span>
                         <div class="service_arrow"></div>
                     </a>

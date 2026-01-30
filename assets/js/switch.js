@@ -1,45 +1,52 @@
-// 固定ヘッダーをコンテンツエリアに入った時に見た目を変更する
-$(document).ready(function () {
-	$(window).on("scroll", function () {
-		var footerStart = $(document).height() - $(".footer").height();
-		var elementTop = $(".kv").height();
-		if ($(".first_section").length > 0) {
-			elementTop = getElementTop($(".first_section")[0]);
-		}
-		if (
-			$(".kv").height() < $(this).scrollTop() ||
-			elementTop < $(this).scrollTop()
-		) {
-			$(".header__inner").addClass("fixType");
-			$(".headerList__item").addClass("black");
-			$(".headerMenu").addClass("black");
-			$(".logo_img02").fadeIn(500);
-			$(".logo_img01").fadeOut(500);
-		} else {
-			$(".header__inner").removeClass("fixType");
-			$(".headerList__item").removeClass("black");
-			$(".headerMenu").removeClass("black");
-			$(".logo_img01").fadeIn(500);
-			$(".logo_img02").fadeOut(500);
-		}
-	});
-});
+function updateHeader(scroll) {
+	var $headerInner = jQuery(".header__inner");
+	var $headerItems = jQuery(".headerList__item");
+	var $headerMenu = jQuery(".headerMenu");
+	var $logo01 = jQuery(".logo_img01");
+	var $logo02 = jQuery(".logo_img02");
 
-//要素の上部の位置を取得
-function getElementTop(el) {
-	const rect = el.getBoundingClientRect();
-	const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	var elementTop = jQuery(".first_section").length
+		? getElementTop(jQuery(".first_section")[0], scroll)
+		: jQuery(".kv").height();
+
+	if (jQuery(".kv").height() < scroll || elementTop < scroll) {
+		$headerInner.addClass("fixType");
+		$headerItems.addClass("black");
+		$headerMenu.addClass("black");
+		$logo02.fadeIn(500);
+		$logo01.fadeOut(500);
+	} else {
+		$headerInner.removeClass("fixType");
+		$headerItems.removeClass("black");
+		$headerMenu.removeClass("black");
+		$logo01.fadeIn(500);
+		$logo02.fadeOut(500);
+	}
+}
+
+function getElementTop(el, scroll) {
+	var rect = el.getBoundingClientRect();
+	var scrollTop = scroll !== undefined ? scroll : (window.pageYOffset || document.documentElement.scrollTop);
 	return rect.top + scrollTop;
 }
 
-//lanilani画像のオリジナル画像を表示させる
-$(document).ready(function () {
-	$(".rss_item .rss_image img").each(function () {
-		// var style = $(this).attr("style");
-		// var newSrc = style.replace(/-300x.*\.(jpg|png)/, ".$1");
-		// $(this).attr("style", newSrc);
-		var src = $(this).attr("src");
+
+jQuery(document).ready(function ($) {
+	// Lenisが使用されている場合
+	if (typeof window.lenis !== 'undefined') {
+		window.addEventListener('lenis:scroll', function (e) {
+			updateHeader(e.detail.scroll);
+		});
+	} else {
+		// 通常のスクロール
+		jQuery(window).on("scroll", function () {
+			updateHeader(jQuery(this).scrollTop());
+		});
+	}
+
+	jQuery(".rss_item .rss_image img").each(function () {
+		var src = jQuery(this).attr("src");
 		var newSrc = src.replace(/-300x.*\.(jpg|png)/, ".$1");
-		$(this).attr("src", newSrc);
+		jQuery(this).attr("src", newSrc);
 	});
 });
